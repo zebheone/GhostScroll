@@ -11,10 +11,28 @@
             {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
             <h1 class="blog-title">{{@blog.title}}</h1>
             <h2 class="blog-description">{{@blog.description}}</h2>
+            <a class='btn first'>to the Blog!</a>
+            <a class='btn last'>to the Intro!</a>
+            <a class='btn rss' href="{{@blog.url}}/rss">RSS!</a> 
+            </div>
 
-            <a class='btn first'>Take a tour</a>
-            <a class='btn last'>Cut to the chase</a><br>
-            <i id='header-arrow' class="fa fa-angle-down"></i>
+
+            <div id="site-head-content" class="inner">
+            <h2 class="blog-description"> <i class="fa fa-archive"></i> argomenti:</h2>
+            {{#foreach posts}}
+                {{#if tags}}
+		        {{tags separator=", "}}.		<!-- <a class="post-tags" href="{{url}}">{{tags}}</a> -->
+	        {{/if}}
+            {{/foreach}}
+            <!-- <i id='header-arrow' class="fa fa-angle-down"></i> -->
+            </div>
+            
+        <div id="search" class="inner">
+        <form>
+    <i class="fa fa-tags"></i>  <input id="search-field" placeholder=" Cerca una pillola..." />
+        </form>
+        <p id="results"></p>
+        <span class="post-meta"> <i class="fa fa-angle-down"></i> scroll down <i class="fa fa-angle-down"></i> </span>
         </div>
     </div>
 
@@ -42,12 +60,31 @@
         
             <header class="post-header">
                 
-                <h2 class="post-title">{{{title}}}</h2>
+                <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
 
             </header>
+            <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}}</span>
             <section class="post-content">
                 <p>{{content characters="9999999999999"}}</p>
             </section>
+            
+             {{#if tags}}
+             <section class="share"> <br>
+                <h4> <i class="fa fa-thumbs-o-up"></i>Condividi</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text={{title}}&url={{@blog.url}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{@blog.url}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url={{@blog.url}}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+            {{/if}}
         </article>
         <div class='post-after'></div>
     </div>

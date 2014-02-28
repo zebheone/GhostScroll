@@ -175,7 +175,7 @@ a:hover {
 a.btn {
     
     text-decoration: none;
-    background-color: #9fd067;
+    background-color: #800080;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     color: white;
@@ -446,7 +446,7 @@ li {
     margin-bottom: 0rem;
     text-align: center;
     color: #fff;
-    background: rgb(0, 153, 204) no-repeat center center;
+    background: rgb(128, 0, 128) no-repeat center center;
     background-size: cover;
 }
 

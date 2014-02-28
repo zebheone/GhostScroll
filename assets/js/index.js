@@ -7,6 +7,7 @@ var $post = $('.post'),
 	$fnav = $('.fixed-nav'),
 	$postholder = $('.post-holder'),
 	$postafter = $('.post-after'),
+	$posthead = $('#post-header'),
 	$sitehead = $('#site-head');
 
 /*globals jQuery, document */
@@ -22,7 +23,7 @@ var $post = $('.post'),
         $postholder.each(function (e) {
         	if(e % 2 != 0)
         		$(this).css({
-                    'background': '#0099cc',
+                    'background': '#800080',
                     'color'     : 'white',
                 })
         })
