@@ -14,7 +14,7 @@
             </a>
         <h1 class="blog-title">{{post.title}}</h1>
         <a class='btn first'>to the Post!</a>
-            <a href="#disqus_thread" class='btn'>Comments!</a> 
+            <a href="{{url}}#disqus_thread" class='btn'>Comments!</a> 
             <div id="search">
        <br> <form>
     <i class="fa fa-tags"></i>  <input id="search-field" placeholder=" Cerca una pillola..." />

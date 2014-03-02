@@ -50,7 +50,6 @@
     <script type="text/javascript" src= "{{asset "js/index.js"}}"></script>
     <script type="text/javascript" src= "{{asset "js/ghostHunter/jquery.ghostHunter.min.js"}}"></script>
     <script type="text/javascript" src= "{{asset "js/search.js"}}"></script>
-    <script type="text/javascript" src= "{{asset "js/dsq_comments_count.js"}}"></script>
 
 </body>
 </html>

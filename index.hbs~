@@ -64,7 +64,7 @@
                 <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
 
             </header>
-            <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <a href="{{url}}#disqus_thread">Comments</a> </span>
+            <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}}</span>
             <section class="post-content">
                  <p>{{content characters="9999999999999"}}</p> 
                 <!-- <p>{{excerpt}}&hellip;</p> -->

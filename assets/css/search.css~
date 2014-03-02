@@ -1,0 +1,10 @@
+#search {
+    border: 0px none;
+    -moz-box-shadow: none;
+    outline: none;
+}
+
+input {
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
