@@ -2,7 +2,7 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-    <header id="site-head" style="background-image: url(/content/images/post_cover.jpg)">
+    <header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/post_cover.jpg)"{{/if}}>
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
@@ -14,7 +14,7 @@
             </a>
         <h1 class="blog-title">{{post.title}}</h1>
         <a class='btn first'>to the Post!</a>
-            <a href="{{url}}#disqus_thread" class='btn'>Comments!</a> 
+            <a href="#disqus_thread" class='btn'>to Comments!</a> 
             <div id="search">
        <br> <form>
     <i class="fa fa-tags"></i>  <input id="search-field" placeholder=" Cerca una pillola..." />
@@ -28,7 +28,7 @@
     </header>
 <main class="content" role="main">
 
-        <article class="{{post_class}} first">
+        <article id="{{id}}" class="{{post_class}} first">
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
        <!-- <header class="post-header">
@@ -64,4 +64,5 @@
 
 </main>
 
-<script type="text/javascript" src= "{{asset "js/dsq_javascript.js"}}"></script>
+<script type="text/javascript" src= "{{asset "js/dsq_comments.js"}}"></script>
+

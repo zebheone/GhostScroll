@@ -1,21 +1,31 @@
-# GhostScroll
-All you need is here:
-http://grmmph.com/ghostscroll/
+Hello! This is a GhostScroll Fork.
 
-## Call for contributions 
-What's started as a small project of mine seems to grab more attention than expected. So why not totally open it for further development.
+# GhostScroll Purple Version
+Visit My Blog for a DEMO: http://twelvepurplepills.com
 
-I have in mind few features that would be nice to have on GhostScroll which are listed below, but if anyone have any more ideas for improvements, please file and issue and I'll add them here.
+* OnePage/Multiple Pages hybrid based on {{tags}}.
+* Disqus Comments.
+* Site search based on RSS feed. (GhostHunter) https://github.com/i11ume/ghostHunter/
 
-The thing is that I don't have the time to work on this alone. So if you have the time and feel like contributing and working on the to do list, you will have my gratitude and of course eternal fame and glory for all times.
+## Customization
 
-### To do list
-* Add scrolling parallax feature for the header image.
-* Create a color scheme picker plugin. (can be a ghost plugin or en external code generator).
+* Post charachters in Index
+  file: index.hbs
+  line 74/79: {{content characters="650"}} // if tags found, show only 650 characters, else all characters are shown.
+  
+* Disqus Comments
+  file: assets/js/dsq_comments.js and assets/js/dsq_comments_count.js
+  line 2: change 'twelvepurplepills' with your Disqus Shortname
+  
+* GhostHunter
+  file: assets/js/ghostHunter/
+  follow the readme https://github.com/i11ume/ghostHunter/
+  
+* GhostScroll basic usage and customization
+  follow the website how-to http://ghostscroll.grmmph.com/
 
-### Some experimental thoughts
-Maybe it will be interesting to take ghost source code and modify it a bit to fit this single-page purpose. Anyone interested?
+  
 
-
-P.S.
-To make development workflow even faster, I have GhostScroll's git also here: https://codio.com/grmmph/GhostScroll
+=======
+http://ghostscroll.grmmph.com
+>>>>>>> 215e67cda9f9ca0f38fc80d70b5c32e480a76b7c
