@@ -13,10 +13,7 @@
             <h2 class="blog-description">{{@blog.description}}</h2>
             <a class='btn first'>to the Blog!</a>
             <a class='btn last'>to the Intro!</a>
-            <a class='btn rss' href="{{@blog.url}}/rss">RSS!</a> 
-            
-
-
+   
 
            <!-- <br> <h2 class="blog-description"> <i class="fa fa-archive"></i> tag box:</h2> -->
             <br> {{#foreach posts}}
@@ -72,7 +69,15 @@
             <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a> </span>
             <section class="post-content">
                  {{#if tags}}
-                    <p class="post-description">{{content characters="650"}}<a href="{{url}}">&hellip;read more <i class="fa fa-paperclip"></i></a></p>
+                    <p class="post-description">{{content characters="650"}}
+                        <a class='btn' href="{{url}}">to the Post! <i class="fa fa-leaf"></i></a>
+                         <a class='btn' href="http://twitter.com/share?text={{title}}&url={{@blog.url}}{{url}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a>
+                        <a class='btn' href="https://www.facebook.com/sharer/sharer.php?u={{@blog.url}}{{url}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a>
+                        <a class='btn' href="https://plus.google.com/share?url={{@blog.url}}{{url}}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a>
+                   </p>
                 {{else}}
                     <p class="post-description">{{content characters="9999999999999"}}</p>
                 {{/if}}
