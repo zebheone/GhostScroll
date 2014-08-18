@@ -1,6 +1,6 @@
-<script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'twelvepurplepills'; // required: replace example with your forum shortname
+        var disqus_shortname = 'twelvepurplepills'; // required: replace my shortname with your forum shortname
+		var disqus_identifier = '{{post.id}}';
         
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
@@ -8,4 +8,3 @@
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-</script>
