@@ -20,8 +20,12 @@
 
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="{{asset "font-awesome/css/font-awesome.min.css"}}" >
     <link rel="stylesheet" type="text/css" href="{{asset "css/search.css"}}" >
+=======
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+>>>>>>> 339903fe505f9ee2823ba8b2cbca075ee04bcb29
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -35,7 +39,7 @@
         <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a><br>
         <div class="inner">
              <section class="copyright"><a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
-             <section class="poweredby"><a href="https://github.com/zebheone">Purple Slimer</a> theme by <a href="{{@blog.url}}/">Albi</a>. <br>
+             <section class="poweredby"><a href="https://github.com/zebheone/GhostScroll">Purple Slimer</a> theme by <a href="{{@blog.url}}/">Albi</a>. <br>
              Based on <a href="http://ghostscroll.grmmph.com/">GhostScroll</a> theme by <a href="http://grmmph.com">Yonatan</a>. <br>
              Proudly published with <a class="i-ghost" href="http://ghost.org">Ghost</a><br><span><br>
 
