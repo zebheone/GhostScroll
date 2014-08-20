@@ -1,9 +1,9 @@
 /**
  * Main JS file for GhostScroll behaviours
  */
-var $post = $('.post'), 
-	$first = $('.post.first'), 
-	$last = $('.post.last'), 
+var $post = $('.post'),
+	$first = $('.post.first'),
+	$last = $('.post.last'),
 	$fnav = $('.fixed-nav'),
 	$postholder = $('.post-holder'),
 	$postafter = $('.post-after'),
@@ -19,7 +19,7 @@ var $post = $('.post'),
 		}, 1000);
     }
     $(document).ready(function(){
-     
+
         $postholder.each(function (e) {
         	if(e % 2 != 0)
         		$(this).css({
@@ -36,7 +36,7 @@ var $post = $('.post'),
         		$(this).css('left', '6%')
 
         })
-        
+
 
         $('.btn.first').click( function () {
         	srcTo ($first)
@@ -69,7 +69,7 @@ var $post = $('.post'),
         })
 
         $('.post.last').next('.post-after').hide();
-        if($sitehead.length) { 
+        if($sitehead.length) {
             $(window).scroll( function () {
                 var w = $(window).scrollTop(),
                     g = $sitehead.offset().top,
@@ -106,9 +106,9 @@ var $post = $('.post'),
         $('li').before('<span class="bult fa fa-asterisk icon-asterisk"></span>')
         $('blockquote p').prepend('<span class="quo icon-quote-left"></span>')
                 .append('<span class="quo icon-quote-right"></span>')
-        
+
     });
-    
+
 
     $post.each(function () {
         var postText = $(this).html();
@@ -119,7 +119,7 @@ var $post = $('.post'),
             fa[i].icon  = icons[i];
             fa[i].int   = postText.search(fa[i].str);
 
-            if(fa[i].int > -1 ) { 
+            if(fa[i].int > -1 ) {
                 fa[i].count = postText.match(new RegExp(fa[i].str,"g")).length;
                 for(var j=0; j < fa[i].count; j++) {
                     $(this).html($(this).html().replace(fa[i].str, "<i class='fa "+fa[i].icon+"'></i>"))
@@ -127,6 +127,6 @@ var $post = $('.post'),
             }
         }
     })
-    
+
 
 }(jQuery));
