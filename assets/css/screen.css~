@@ -94,7 +94,9 @@ body {
     line-height: 1.6em;
     color: #3A4145;
 }
-
+a.fa {
+    text-decoration: none;
+}
 ::-moz-selection {
     color: #222;
     background: #D6EDFF;
@@ -195,6 +197,32 @@ a.btn {
 }
 
 a.btn:hover {
+    background: #86c440;
+}
+
+a.btn_search {
+    
+    text-decoration: none;
+    background-color: #800080;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    color: white;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 0;
+    overflow: visible;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+a.btn_search:hover {
     background: #86c440;
 }
 
@@ -446,7 +474,7 @@ li {
     margin-bottom: 0rem;
     text-align: center;
     color: #fff;
-    background: rgb(0, 153, 204) no-repeat center center;
+    background: rgb(128, 0, 128) no-repeat center center;
     background-size: cover;
 }
 
