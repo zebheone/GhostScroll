@@ -13,28 +13,20 @@
             <h2 class="blog-description">{{@blog.description}}</h2>
             <a class='btn first'>to the Blog!</a>
             <a class='btn last'>to the Intro!</a>
-   
-
-           <!-- <br> <h2 class="blog-description"> <i class="fa fa-archive"></i> tag box:</h2> -->
-            <br> {{#foreach posts}}
+        <span id="results"></span>
+            <span class="post-meta">{{#foreach posts}}
             {{#if tags}}
-	<span class="post-meta">
-		{{#foreach tags}}<i class="fa fa-tag"></i> {{name}} {{/foreach}}
-	</span>
-	{{/if}}
-                <!-- {{#if tags}}
-		        {{tags separator=", "}}.
-	        {{/if}} -->
-            {{/foreach}}
-            <!-- <i id='header-arrow' class="fa fa-angle-down"></i> -->
+		<i class="fa fa-tag"></i> {{tags}}
+	        {{/if}}
+                                    {{/foreach}}</span>
 
-        <div id="search">
+        <span id="search">
         <form>
     <i class="fa fa-tags"></i>  <input id="search-field" placeholder=" Cerca una pillola..." />
         </form>
-        <p id="results"></p>
+        <span id="results">
         <span class="post-meta"> <i class="fa fa-angle-down"></i> scroll down <i class="fa fa-angle-down"></i> </span>
-        </div>
+        </span>
             </div>
                 </div>
 
@@ -46,7 +38,7 @@
     <div class='fixed-nav'>
  <!--     <a class="social" href="https://twitter.com/your_username"><span class="fa-stack fa-lg">
         <i class="fa fa-square-o fa-stack-2x"></i>
-	<i clasS="fa fa-twitter fa-stack-1x"></i>
+	<i class="fa fa-twitter fa-stack-1x"></i>
       </span></a>
       <a class="social" href="https://facebook.com/your_link"><span class="fa-stack fa-lg">
 	<i class="fa fa-square-o fa-stack-2x"></i>
@@ -84,7 +76,7 @@
             <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a> </span>
             <section class="post-content">
                  {{#if tags}}
-                    <p class="post-description">{{content characters="650"}}<a href="{{url}}">&hellip;read more <i class="fa fa-paperclip"></i></a></p>
+                    <p class="post-description">{{content characters="650"}} &hellip;read more<a href="{{url}}"> <i class="fa fa-paperclip"></i></a></p>
                 {{else}}
                     <p class="post-description">{{content characters="9999999999999"}}</p>
                 {{/if}}
