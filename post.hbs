@@ -13,11 +13,11 @@
                 {{/if}}
             </a>
         <h1 class="blog-title">{{post.title}}</h1>
-        <a class='btn first'>to the Post!</a>
-            <a class='btn' href="#disqus_thread">to comments!</a>
+        <a class='btn first'>read post</a>
+            <a class='btn' href="#disqus_thread">comments</a>
             <span id="search">
         <form>
-    <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" Cerca una pillola..." />
+    <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" />
         </form>
         </span>
         <div id="results"></div>
@@ -44,9 +44,9 @@
         </section>
 
         {{/post}}
-        <span class="post-meta"><i class="fa fa-leaf"> commenta</i> {{post.title}}</span>
+        <span class="post-meta"><i class="fa fa-leaf"> Disqus this:</i> "{{post.title}}"</span>
           <div id="disqus_thread"></div>
 
     </article>
-
+    <script type="text/javascript" src= "{{asset "js/dsq_comments.js"}}"></script>
 </main>

@@ -1,6 +1,6 @@
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 var disqus_shortname = 'twelvepurplepills'; // required: replace my shortname with your forum shortname
-var disqus_identifier = '{{post.title}}';
+var disqus_identifier = '{{post.url}}';
 
 /* * * DON'T EDIT BELOW THIS LINE * * */
 (function () {

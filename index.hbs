@@ -13,15 +13,11 @@
             <h2 class="blog-description">{{@blog.description}}</h2>
             <a class='btn first'>to the Blog!</a>
             <a class='btn last'>to the Intro!</a>
-            <span class="post-meta">{{#foreach posts}}
-            {{#if tags}}
-		<i class="fa fa-tag"></i> {{tags}}
-	        {{/if}}
-                                    {{/foreach}}</span>
+            <!-- <span class="post-meta">{{#foreach posts}}<i class="fa fa-tag"></i> {{tags}}{{/foreach}}</span> -->
 
         <span id="search">
         <form>
-    <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" Cerca una pillola..." />
+    <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" />
         </form>
         </span>
         <div id="results"></div>
@@ -35,14 +31,6 @@
 <main class="content" role="main">
 
     <div class='fixed-nav'>
- <!--     <a class="social" href="https://twitter.com/your_username"><span class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-	<i class="fa fa-twitter fa-stack-1x"></i>
-      </span></a>
-      <a class="social" href="https://facebook.com/your_link"><span class="fa-stack fa-lg">
-	<i class="fa fa-square-o fa-stack-2x"></i>
-	<i class="fa fa-facebook fa-stack-1x"></i>
-      </span></a> -->
       <a class="social" href="mailto:albi@twelvepurplepills.com"><span class="fa-stack fa-lg">
 	<i class="fa fa-square-o fa-stack-2x"></i>
 	<i class="fa fa-comments fa-stack-1x"></i>
@@ -53,60 +41,8 @@
       </span></a>
     </div>
 
-    {{! Each post will be output using this markup }}
-    {{#foreach posts}}
-    <div class='post-holder'>
-        
-            {{#if @first}}
-                <article id="{{id}}" class="{{post_class}} first">
-            {{else}}
-                {{#if @last}}
-                    <article id="{{id}}" class="{{post_class}} last" >
-                {{else}}
-                    <article id="{{id}}" class="{{post_class}}">
-                {{/if}}
-            {{/if}}
-        
-            <header class="post-header">
-                
-                <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
-
-            </header>
-            <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a> </span>
-            <section class="post-content">
-                 {{#if tags}}
-                    <p class="post-description">{{content characters="700"}} <a class='btn' href="{{url}}" >read more</a>
-                <a class='btn' href="https://www.facebook.com/sharer/sharer.php?u={{@blog.url}}{{url}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <i class="fa fa-facebook"></i><span class="hidden">Facebook</span>
-                </a>
-                <a class='btn' href="http://twitter.com/share?text={{title}}&url={{@blog.url}}{{url}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <i class="fa fa-twitter"></i><span class="hidden">Twitter</span>
-                </a>
-                <a class='btn' href="https://plus.google.com/share?url={{@blog.url}}{{url}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <i class="fa fa-google-plus"></i><span class="hidden">Google+</span>
-                </a>
-                    </p>
-                {{else}}
-                    <p class="post-description">{{content characters="9999999999999"}}</p>
-                {{/if}}
-            </section>
-            
-             {{#if tags}}
-             <section class="share">
-                
-                
-            </section>
-            {{/if}}
-        </article>
-        <div class='post-after'></div>
-    </div>
-
-    {{/foreach}}
-
-    {{!! After all the posts, we have the previous/next pagination links }}
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
     
 
 </main>
