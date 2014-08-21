@@ -1,0 +1,45 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="vertical">
+        <div id="site-head-content" class="inner">
+        <a id="blog-logo" href="{{@blog.url}}">
+                {{#if @blog.logo}}
+                    <img src="{{@blog.logo}}" alt="Back to home" />
+                {{else}}
+                    {{@blog.title}}
+                {{/if}}
+            </a>
+            <h1 class="page-title">{{tag.name}}</h1>
+            <span class="post-meta">found </span> {{pagination.total}} <span class="post-meta">pill/s tagged with {{tag.name}}</span>
+            <span id="search">
+        <form>
+    <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" />
+        </form>
+        </span>
+        <div id="results"></div>
+        <span class="post-meta"> <i class="fa fa-angle-down"></i> scroll down <i class="fa fa-angle-down"></i> </span>
+        </div>
+    </div>
+</header>
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+    <div class='fixed-nav'>
+      <a class="social" href="mailto:albi@twelvepurplepills.com"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-comments fa-stack-1x"></i>
+      </span></a>
+      <a id="totop-arrow"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-angle-up fa-stack-1x"></i>
+      </span></a>
+    </div>
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</main>
