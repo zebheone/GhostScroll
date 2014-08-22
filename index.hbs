@@ -12,15 +12,14 @@
             <h1 class="blog-title">{{@blog.title}}</h1>
             <h2 class="blog-description">{{@blog.description}}</h2>
             <a class='btn first'>to the Blog!</a>
-            <a class='btn last'>to the Intro!</a>
-            <!-- <span class="post-meta">{{#foreach posts}}<i class="fa fa-tag"></i> {{tags}}{{/foreach}}</span> -->
+            <a class='btn' href="{{@blog.url}}/about-this-blog">to the Intro!</a>
 
-        <span id="search">
+        <div id="search">
         <form>
     <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" />
         </form>
-        </span>
-        <div id="results"></div>
+        <div class="post-meta" id="results"></div>
+        </div>
         <span class="post-meta"> <i class="fa fa-angle-down"></i> scroll down <i class="fa fa-angle-down"></i> </span>
             </div>
                 </div>

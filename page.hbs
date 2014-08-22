@@ -13,15 +13,6 @@
                 {{/if}}
             </a>
         <h1 class="blog-title">{{post.title}}</h1>
-        <a class='btn first'>read post</a>
-            <a class='btn last'>comments</a>
-            
-            <div id="search">
-        <form>
-    <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" />
-        </form>
-        <div class="post-meta" id="results"></div>
-        </div>
         <span class="post-meta"> <i class="fa fa-angle-down"></i> scroll down <i class="fa fa-angle-down"></i> </span>
             </div>
                 </div>
@@ -45,11 +36,7 @@
         </section>
 
         {{/post}}
-        </article>
-        <article class="{{post_class}} last">
-        <span class="post-meta"><i class="fa fa-leaf"> Disqus this:</i> "{{post.title}}"</span>
-          <div id="disqus_thread"></div>
 
     </article>
-    <script type="text/javascript" src= "{{asset "js/dsq_comments.js"}}"></script>
+
 </main>
