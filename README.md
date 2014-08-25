@@ -8,6 +8,8 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 * OnePage/Multiple Pages hybrid based on {{tags}}.
 * Disqus Comments.
 * Site search based on RSS feed. (GhostHunter) https://github.com/i11ume/ghostHunter/
+* tag page
+* single page
 
 ## Customization
 
@@ -27,6 +29,7 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 * GhostScroll basic usage and customization
   follow the website how-to http://ghostscroll.grmmph.com/
 
-  
+* Header images:
+  upload "post_cover.jpg" / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display cover images
 
 =======
