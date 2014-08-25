@@ -19,6 +19,8 @@ var $post = $('.post'),
 		}, 1000);
     }
     $(document).ready(function(){
+    
+        $("body").fitVids(); /* FitsVids */
 
         $postholder.each(function (e) {
         	if(e % 2 != 0)
