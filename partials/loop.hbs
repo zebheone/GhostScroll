@@ -5,22 +5,22 @@
     <div class='post-holder'>
         
             {{#if @first}}
-                <article id="{{id}}" class="{{post_class}} first">
+                <article id="{{id}}" class="{{post_class}} first" itemscope itemtype="http://schema.org/Article">
             {{else}}
                 {{#if @last}}
-                    <article id="{{id}}" class="{{post_class}} last" >
+                    <article id="{{id}}" class="{{post_class}}" last itemscope itemtype="http://schema.org/Article">
                 {{else}}
-                    <article id="{{id}}" class="{{post_class}}">
+                    <article id="{{id}}" class="{{post_class}}" itemscope itemtype="http://schema.org/Article">
                 {{/if}}
             {{/if}}
         
             <header class="post-header">
                 
-                <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
+                <h2 class="post-title" itemprop="headline"><a href="{{url}}">{{title}}</a></h2>
 
             </header>
-            <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a> </span>
-            <section class="post-content">
+            <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a> </span>
+            <section class="post-content" itemprop="articleBody">
                  {{#if tags}}
                     <p class="post-description">{{content characters="700"}} <a class='btn' href="{{url}}" >read more &raquo;</a>
                 <a class='btn' href="https://www.facebook.com/sharer/sharer.php?u={{@blog.url}}{{url}}"
