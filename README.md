@@ -23,7 +23,8 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
   line 3: beware of the unique ID
   
 * GhostHunter
-  file: assets/js/ghostHunter/
+  You have to git clone it in this dir: assets/js/ghostHunter/
+  git clone git@github.com:i11ume/ghostHunter.git
   follow the readme https://github.com/i11ume/ghostHunter/
   
 * GhostScroll basic usage and customization
