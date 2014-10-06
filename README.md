@@ -15,28 +15,28 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 
 * Post charachters in Index
   
-    file: partials/loop.hbs
-    line 25: {{content characters="700"}} // if tags found, show only 700 characters, else all characters are shown.
+    * file: partials/loop.hbs
+    * line 25: {{content characters="700"}} // if tags found, show only 700 characters, else all characters are shown.
   
 * Disqus Comments
   
-file: assets/js/dsq_comments.js and assets/js/dsq_comments_count.js
-    line 2: change 'twelvepurplepills' with your Disqus Shortname
-line 3: beware of the unique ID
+    * file: assets/js/dsq_comments.js and assets/js/dsq_comments_count.js
+    * line 2: change 'twelvepurplepills' with your Disqus Shortname
+    * line 3: beware of the unique ID
   
 * GhostHunter
 
-    You have to git clone GhostHunter project in this dir: assets/js/ghostHunter/
-    git clone git@github.com:i11ume/ghostHunter.git
-    follow the readme https://github.com/i11ume/ghostHunter/
+    * You have to git clone GhostHunter project in this dir: assets/js/ghostHunter/
+    * git clone git@github.com:i11ume/ghostHunter.git
+    * follow the readme https://github.com/i11ume/ghostHunter/
   
 * GhostScroll basic usage and customization
 
-    follow the website how-to http://ghostscroll.grmmph.com/
+    * follow the website how-to http://ghostscroll.grmmph.com/
 
 * Header images:
 
-    upload "post_cover.jpg" / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display cover images
+    * upload "post_cover.jpg" / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display cover images
 
 =======
 
