@@ -21,8 +21,8 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 * Disqus Comments
   
     * file: assets/js/dsq_comments.js and assets/js/dsq_comments_count.js
-    * line 2: change 'twelvepurplepills' with your Disqus Shortname
-    * line 3: beware of the unique ID
+    * FIRST THING TO DO! line 2: change 'twelvepurplepills' with your Disqus Shortname
+    * BEWARE of the unique ID, I don't use it.
   
 * GhostHunter
 
