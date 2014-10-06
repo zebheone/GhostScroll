@@ -2,7 +2,7 @@
 
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-    <header id="site-head" {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
+    <header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/page_cover.jpg)"{{/if}}>
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
@@ -13,9 +13,6 @@
                 {{/if}}
             </a>
         <h1 class="blog-title">{{name}}</h1>
-        
-        <a class='btn first'>read post</a>
-            <a class='btn' href="{{@blog.url}}">home</a>
             
             <div id="search">
         <form>
@@ -35,7 +32,7 @@
             <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
         </figure>
         {{/if}}
-        <h1 class="author-title">{{name}}</h1>
+        <h1 class="author-title">{{name}}'s posts</h1>
         <h2 class="author-bio">{{bio}}</h2>
         <div class="author-meta">
             {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}

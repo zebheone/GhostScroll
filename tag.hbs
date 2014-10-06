@@ -12,8 +12,9 @@
                     {{@blog.title}}
                 {{/if}}
             </a>
-            <h1 class="page-title">{{tag.name}}</h1>
-            <span class="post-meta">found </span> {{pagination.total}} <span class="post-meta">post/s tagged "{{tag.name}}"</span>
+            <h1 class="blog-title">{{tag.name}}</h1>
+            
+            <h2 class="blog-description">found {{pagination.total}} post/s tagged "{{tag.name}}"</h2>
             <div id="search">
         <form>
     <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" />
