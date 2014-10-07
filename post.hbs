@@ -2,7 +2,7 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-    <header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/post_cover.jpg)"{{/if}}>
+    <header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/post_cover.jpg)"{{else}}no-cover{{/if}}>
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
@@ -58,12 +58,12 @@
             {{/if}}
 
             <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
+                <h4><a href="{{url}}" class="fa fa-user"> {{name}}</a></h4>
 
                 {{#if bio}}
                     <p>{{bio}}</p>
                 {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                    <p>Read <a href="{{url}}"> more posts</a> by this author.</p>
                 {{/if}}
             </section>
 

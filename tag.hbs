@@ -14,7 +14,7 @@
             </a>
             <h1 class="blog-title">{{tag.name}}</h1>
             
-            <h2 class="blog-description">found {{pagination.total}} post/s tagged "{{tag.name}}"</h2>
+            <h2 class="blog-description">found {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} tagged "{{tag.name}}"</h2>
             <div id="search">
         <form>
     <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" />
