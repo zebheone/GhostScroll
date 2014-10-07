@@ -65,10 +65,6 @@
                 {{else}}
                     <p>Read <a href="{{url}}">more posts</a> by this author.</p>
                 {{/if}}
-                <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                </div>
             </section>
 
         {{/author}}
@@ -91,7 +87,7 @@
 
         </footer>
 
-        <p class="post-meta"><i class="fa fa-leaf"> Disqus:</i> "{{title}}"</p>
+        <p><i class="fa fa-leaf"> Disqus:</i> "{{title}}"</p>
           <div id="disqus_thread"></div>
         </span>
         {{/post}}
