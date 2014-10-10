@@ -36,7 +36,8 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 
 * Header images:
 
-    * upload "post_cover.jpg" / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display cover images
+    * upload "post_cover.jpg" / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display different cover images
+    * Change your user cover in order to display Author cover on your Author page
 
 =======
 
