@@ -39,6 +39,10 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 
     * upload "post_cover.jpg" / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display different cover images
     * Change your user cover in order to display Author cover on your Author page
+    
+* Google webmaster site verification code:
+
+    * Change or remove line 7 in "default.hsb"
 
 =======
 
