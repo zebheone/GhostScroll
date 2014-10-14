@@ -40,11 +40,15 @@
 
         {{! Everything below outputs content of the the post which has been published }}
 
-		<span class="post-meta"><i class="fa fa-leaf"></i> {{title}} <i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} </span>
+		<span class="post-meta"><i class="fa fa-leaf"></i> {{title}}  <i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} </span>
 
         <section class="post-content">
             {{content}}	
         </section>
+        
+        <section class="post-footer">
+          <div id="disqus_thread"></div>
+          </section>
         
         <footer class="post-footer">
 
@@ -56,7 +60,7 @@
                 <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
             </figure>
             {{/if}}
-
+          
             <section class="author">
                 <h4><a href="{{url}}" class="fa fa-user"> {{name}}</a></h4>
 
@@ -84,10 +88,7 @@
                     <span class="hidden">Google+</span>
                 </a>
             </section>
-            <section>
-        <h4><i class="fa fa-leaf"> Comment</i> "{{title}}"</h4>
-          <div id="disqus_thread"></div>
-          </section>
+
     </footer>
         {{/post}}
     
