@@ -7,7 +7,7 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 
 * OnePage/Multiple Pages hybrid based on {{tags}}.
 * Disqus Comments.
-* Site search based on RSS feed. (GhostHunter) https://github.com/i11ume/ghostHunter/
+* Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/)
 * tag page
 * single page
 
@@ -26,7 +26,7 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
   
 * GhostHunter
 
-    * You have to git clone GhostHunter project in this dir: assets/js/ghostHunter/
+    * You have to git clone GhostHunter project in this dir: .../assets/js/
     * git clone git@github.com:i11ume/ghostHunter.git
     * follow the readme https://github.com/i11ume/ghostHunter/
   
