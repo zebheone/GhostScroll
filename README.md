@@ -10,6 +10,7 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 * Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/)
 * tag page
 * single page
+* author page
 
 ## Customization
 
