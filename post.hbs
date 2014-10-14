@@ -2,7 +2,7 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-    <header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/post_cover.jpg)"{{else}}no-cover{{/if}}>
+    <header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/post_cover.jpg)"{{/if}}>
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
@@ -85,7 +85,7 @@
                 </a>
             </section>
             <section>
-        <h4><i class="fa fa-leaf"> Disqus:</i> "{{title}}"</h4>
+        <h4><i class="fa fa-leaf"> Comment</i> "{{title}}"</h4>
           <div id="disqus_thread"></div>
           </section>
     </footer>
