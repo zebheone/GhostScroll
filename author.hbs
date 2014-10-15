@@ -7,9 +7,7 @@
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
                 {{#if @author.image}}
-                    <!-- <img src="url({{image}})" alt="Back to home" /> -->
-                    <figure class="author-image">
-            <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+                    <img src="url({{image}})" alt="Back to home" /><span class="hidden">{{name}}'s Picture</span>
                 {{/if}}
             </a>
         <h1 class="blog-title"><i class="fa fa-user"></i> {{name}}</h1>
