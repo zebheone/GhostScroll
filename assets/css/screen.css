@@ -615,6 +615,14 @@ a.fn-item.active {
     text-decoration: underline;
 }
 
+.author-thumb {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 9px;
+    border-radius: 100%;
+}
+
 .user-meta {
     position: relative;
     padding: 0.3rem 40px 0 100px;
@@ -689,8 +697,8 @@ a.fn-item.active {
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
+    margin: 6rem 0 0 0;
+    padding: 6rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
 
@@ -702,12 +710,39 @@ a.fn-item.active {
 .post-footer p {
     margin: 1rem 0;
     font-size: 1.4rem;
-    line-height: 1.6em;
+    line-height: 1.75em;
+}
+
+/* list of author links - location / url */
+.author-meta {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-style: italic;
+    color: #9EABB3;
+}
+
+.author-meta a {
+    color: #9EABB3;
+}
+.author-meta a:hover {
+    color: #111;
 }
 
 /* Create some space to the right for the share links */
 .post-footer .author {
     margin-right: 180px;
+}
+
+.post-footer h4 a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.post-footer h4 a:hover {
+    text-decoration: underline;
 }
 
 /* Drop the share links in the space to the right.
@@ -716,7 +751,7 @@ a.fn-item.active {
    links remain at a fixed width the whole time */
 .post-footer .share {
     position: absolute;
-    top: 4rem;
+    top: 6rem;
     right: 0;
     width: 140px;
 }
@@ -724,8 +759,9 @@ a.fn-item.active {
 .post-footer .share a {
     font-size: 1.8rem;
     display: inline-block;
-    margin: 1.4rem 1.6rem 1.6rem 0;
+    margin: 1rem 1.6rem 1.6rem 0;
     color: #BBC7CC;
+    text-decoration: none;
 }
 
 .post-footer .share a:hover {
@@ -993,8 +1029,179 @@ a.fn-item.active {
     h4 {
         font-size: 2.8rem;
     }
+    
+    .author-profile {
+        padding-bottom: 4rem;
+    }
+
+    .author-profile .author-bio {
+        font-size: 1.6rem;
+    }
+
+    .author-meta span {
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .author-profile .author-meta span {
+        font-size: 1.6rem;
+    }
+
+    .post-head.main-header {
+        height:45%;
+    }
+
+    .tag-head.main-header,
+    .author-head.main-header {
+        height: 30%;
+    }
+
+    .no-cover.post-head.main-header {
+        height: 55px;
+        padding: 0;
+    }
+
+    .no-cover.author-head.main-header {
+        padding: 0;
+    }
 
 }
+
+}
+
+/* ==========================================================================
+   6. Author profile
+   ========================================================================== */
+
+.post-head.main-header {
+    height: 65%;
+    min-height: 180px;
+}
+
+.no-cover.post-head.main-header {
+    height: 85px;
+    min-height: 0;
+    margin-bottom: 0;
+    background: transparent;
+}
+
+.tag-head.main-header {
+    height: 40%;
+    min-height: 180px;
+}
+
+.author-head.main-header {
+    height: 40%;
+    min-height: 180px;
+}
+
+.no-cover.author-head.main-header {
+    height: 10%;
+    min-height: 100px;
+    background: transparent;
+}
+
+.author-profile {
+    padding: 0 15px 5rem 15px;
+    border-bottom: #EBF2F6 1px solid;
+    text-align: center;
+}
+
+/* Add a little circle in the middle of the border-bottom */
+.author-profile:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
+}
+
+.author-image {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 6px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: #E7EEF2 0 0 0 1px;
+}
+
+.author-image .img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+}
+
+.author-profile .author-image {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 120px;
+    height: 120px;
+    padding: 3px;
+    margin: -100px auto 0 auto;
+    box-shadow: none;
+}
+
+.author-title {
+    margin: 1.5rem 0 1rem;
+}
+
+.author-bio {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    font-weight: 200;
+    color: #50585D;
+    letter-spacing: 0;
+    text-indent: 0;
+}
+
+.author-meta {
+    margin: 1.6rem 0;
+}
+/* Location, website, and link */
+.author-profile .author-meta {
+    margin: 2rem 0;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.7rem;
+}
+.author-meta span {
+    display: inline-block;
+    margin: 0 2rem 1rem 0;
+    word-wrap: break-word;
+}
+.author-meta a {
+    text-decoration: none;
+}
+
+/* Turn off meta for page2+ to make room for extra
+   pagination prev/next links */
+.archive-template .author-profile .author-meta {
+    display: none;
+}
+
 
 /* ==========================================================================
    10. Media Queries - Smaller than 500px
@@ -1094,6 +1301,16 @@ a.fn-item.active {
     .post-footer .share a {
         margin: 1.4rem 0.8rem 0 0.8rem;
     }
+    
+    .author-meta li {
+        float: none;
+        margin: 0;
+        line-height: 1.75em;
+    }
+
+    .author-meta li:before {
+        display: none;
+    }
 
     .older-posts,
     .newer-posts {
@@ -1109,10 +1326,92 @@ a.fn-item.active {
         /*margin-top: 0.8rem;*/
         font-size: 1.1rem;
     }
+    
+    .author-profile {
+        padding-bottom: 2rem;
+    }
+
+    .post-head.main-header {
+        height: 30%;
+    }
+
+    .tag-head.main-header,
+    .author-head.main-header {
+        height: 20%;
+    }
+
+    .author-profile .author-image {
+        margin-top: -70px;
+    }
+
+    .author-profile .author-meta span {
+        font-size: 1.4rem;
+    }
 
 }
+   
+/* ==========================================================================
+   12. Animations
+   ========================================================================== */
+
+/* Used to fade in title/desc on the home page */
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* Used to bounce .scroll-down on home page */
+@-webkit-keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
+    }
+    40% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
+    }
+    60% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
+    }
+}
+
 
 /* ==========================================================================
-   End of file. Media queries should be the last thing here. Do not add stuff
+   End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
