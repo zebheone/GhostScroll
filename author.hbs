@@ -6,9 +6,7 @@
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
-                {{#if image}}
-                    <img src="url({{image}})" alt="{{name}}'s Picture" />
-                {{/if}}
+                 {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
             </a>
         <h1 class="blog-title"><i class="fa fa-user"></i> {{name}}</h1>
         <h2 class="author-bio">{{bio}}</h2>
