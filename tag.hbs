@@ -1,6 +1,6 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 {{! The big featured header on the homepage, with the site logo and description }}
 <header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/tag_cover.jpg)"{{/if}}>
     <div class="vertical">
@@ -12,8 +12,7 @@
                     {{@blog.title}}
                 {{/if}}
             </a>
-            <h1 class="blog-title">{{tag.name}}</h1>
-            
+            <h1 class="blog-title">{{tag.name}}</h1>         
             <h2 class="blog-description">found {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} tagged "{{tag.name}}"</h2>
             <div id="search">
         <form>
@@ -22,11 +21,11 @@
         <div class="post-meta" id="results"></div>
         </div>
             </div>
-            <span class="post-meta"> <i class="fa fa-angle-down"></i> scroll down <i class="fa fa-angle-down"></i> </span>
+            <a class="fa fa-chevron-down" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
                 </div>
 </header>
 
-<main class="content" role="main">
+<main id="content" class="content" role="main">
 
     <div class='fixed-nav'>
       <a class="social" href="/about-this-blog" alt="Blog Info"><span class="fa-stack fa-lg">

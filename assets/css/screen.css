@@ -4,17 +4,19 @@
 
 /*
 
-    0.  Includes
+    0.  Normalize
     1.  Icons
     2.  General
     3.  Utilities
     4.  General
     5.  Single Post
-    6.  Third Party Elements
-    7.  Pagination
-    8.  Footer
-    9.  Media Queries (Tablet)
-    10. Media Queries (Mobile)
+    6.  Tag Archive
+    7.  Third Party Elements
+    8.  Pagination
+    9.  Footer
+    10. Media Queries (Tablet)
+    11. Media Queries (Mobile)
+    12. Animations
 
  */
 
@@ -899,7 +901,7 @@ a.fn-item.active {
     position: absolute;
     top: 2px;
     left: 9px;
-    font-weight: bold;
+    font-weight: 700;
     transition: color 0.5s ease;
 }
 
@@ -1069,7 +1071,7 @@ a.fn-item.active {
 }
 
 /* ==========================================================================
-   6. Author profile
+   10. Author profile
    ========================================================================== */
 
 .post-head.main-header {
@@ -1204,7 +1206,7 @@ a.fn-item.active {
 
 
 /* ==========================================================================
-   10. Media Queries - Smaller than 500px
+   11. Media Queries - Smaller than 500px
    ========================================================================== */
 
 
