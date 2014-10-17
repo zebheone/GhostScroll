@@ -74,7 +74,6 @@
 
             <section class="author">
                 <h4><a href="{{url}}">{{name}}</a></h4>
-
                 {{#if bio}}
                     <p>{{bio}}</p>
                 {{else}}
@@ -103,7 +102,10 @@
                     <span class="hidden">Google+</span>
                 </a>
             </section>
-
+            <div class="author-meta">
+    {{! The tag below includes the recomended loop - partials/recomended.hbs }}
+    {{> "recommend"}}
+    </div>
         </footer>
         {{/post}}
     
@@ -111,4 +113,5 @@
     </article>
 
     <script type="text/javascript" src= "{{asset "js/dsq_comments.js"}}"></script>
+    
 </main>
