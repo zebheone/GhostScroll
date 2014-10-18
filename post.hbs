@@ -12,7 +12,7 @@
                     {{@blog.title}}
                 {{/if}}
             </a>
-        <h1 class="blog-title">{{> "eggs"}}{{post.title}}</h1>
+        <h1 class="blog-title">{{post.title}}</h1>
         {{#post}}{{#if tags}}<h2 class="blog-description">TAGS: {{tags separator=", "}}</h2>{{/if}}{{/post}}
         <a class='btn first'>read post</a>
             <a class='btn' href="{{url}}#disqus_thread">comments</a>
