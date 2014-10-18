@@ -2,7 +2,7 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-    <header id="site-head" {{#post}}{{#if image}}style="background-image: url({{image}})"{{/if}}>{{/post}}
+    <header id="site-head" {{#post}}{{#if image}}style="background-image: url({{image}})"{{else}}style="background-image: url(/content/images/post_cover.jpg){{/if}}">{{/post}}
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
