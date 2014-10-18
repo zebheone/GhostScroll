@@ -617,6 +617,14 @@ a.fn-item.active {
     text-decoration: underline;
 }
 
+.post-thumb {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 9px;
+    border-radius: 100%;
+}
+
 .author-thumb {
     width: 24px;
     height: 24px;

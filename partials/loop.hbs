@@ -15,11 +15,11 @@
             {{/if}}
         
             <header class="post-header">
-                
-                <h2 class="post-title" itemprop="headline"><a href="{{url}}">{{title}}</a></h2>
-
+                {{#if image}}<img class="post-thumb" src="{{image}}" alt="post image" nopin="nopin" />{{/if}}
+                <h2 class="post-title" itemprop="headline">{{> "eggs"}}<a href="{{url}}">{{title}}</a></h2>
+                <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a> </span>
             </header>
-            <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a> </span>
+            
             <section class="post-content" itemprop="articleBody">
                  {{#if tags}}
                     <p class="post-description">{{content characters="700"}} 
@@ -41,7 +41,7 @@
                     <p class="post-description">{{content characters="9999999999999"}}</p>
                 {{/if}}
             </section>
-            
+
         </article>
         <div class='post-after'></div>
     </div>

@@ -2,7 +2,7 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-    <header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/post_cover.jpg)"{{/if}}>
+    <header id="site-head" {{#post}}{{#if image}}style="background-image: url({{image}})"{{/if}}>{{/post}}
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
@@ -12,7 +12,7 @@
                     {{@blog.title}}
                 {{/if}}
             </a>
-        <h1 class="blog-title">{{post.title}}</h1>
+        <h1 class="blog-title">{{> "eggs"}}{{post.title}}</h1>
         {{#post}}{{#if tags}}<h2 class="blog-description">TAGS: {{tags separator=", "}}</h2>{{/if}}{{/post}}
         <a class='btn first'>read post</a>
             <a class='btn' href="{{url}}#disqus_thread">comments</a>
@@ -103,12 +103,11 @@
                 </a>
             </section>
             <div class="author-meta">
-    {{! The tag below includes the recomended loop - partials/recomended.hbs }}
+    {{! The tag below includes the recomended loop - partials/recommend.hbs }}
     {{> "recommend"}}
     </div>
         </footer>
         {{/post}}
-    
     
     </article>
 
