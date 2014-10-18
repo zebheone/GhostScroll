@@ -9,7 +9,7 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 * Disqus Comments.
 * Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/)
 * tag page
-* single page
+* post page with post image as header background
 * author page
 
 ## Customization
@@ -37,7 +37,8 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 
 * Header images:
 
-    * upload "post_cover.jpg" / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display different cover images
+    * add a post image in order to display it as post header background (ghost 0.5.2)
+    * upload "post_cover.jpg" (ghost 0.5.1)  / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display different cover images
     * Change your user cover in order to display Author cover on your Author page
     
 * Google webmaster site verification code:
