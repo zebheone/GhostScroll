@@ -43,7 +43,7 @@
 
         {{! Everything below outputs content of the the post which has been published }}
 
-		<span class="post-meta"><i class="fa fa-leaf"></i> {{title}} <i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} </span>
+		<span class="post-meta"><i class="fa fa-leaf"></i> {{title}} {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} </span>
 
         <section class="post-content">
             {{content}}	
