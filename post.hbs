@@ -104,7 +104,7 @@
             </section>
             <div class="author-meta">
     {{! The tag below includes the recomended loop - partials/recommend.hbs }}
-    {{> "recommend"}}
+    {{#if tags}}{{> "recommend"}}{{/if}}
     </div>
         </footer>
         {{/post}}
