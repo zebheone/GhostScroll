@@ -14,7 +14,7 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 
 ## Customization
 
-* Post charachters in Index
+* Post characters in Index
   
     * file: partials/loop.hbs
     * line 25: {{content characters="700"}} // if tags found, show only 700 characters, else all characters are shown.
