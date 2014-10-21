@@ -511,9 +511,6 @@ li {
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 #blog-logo img {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     display: block;
     max-height: 100px;
     width: auto;
@@ -522,9 +519,6 @@ li {
 }
 
 #back {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     color: rgba(0,0,0,0.2);
     position: fixed;
     top: 8px;
@@ -653,7 +647,6 @@ a.fn-item.active {
     float: left;
     margin-right: 9px;
     border-radius: 100%;
-    border: 0px solid #222222;
 }
 
 .author-thumb {
@@ -1052,9 +1045,6 @@ a.fn-item.active {
 }
 
 .author-image {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     display: block;
     position: absolute;
     top: -40px;
