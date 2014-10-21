@@ -65,15 +65,15 @@
 
         {{! Everything inside the #author tags pulls data from the author }}
         {{#author}}
-
+        <address itemscope itemtype="http://schema.org/Person">
             {{#if image}}
             <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                <a class="img" href="{{url}}" style="background-image: url({{image}})" itemprop="image"><span class="hidden">{{name}}'s Picture</span></a>
             </figure>
             {{/if}}
 
             <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
+                <h4><a href="{{url}}" itemprop="author">{{name}}</a></h4>
                 {{#if bio}}
                     <p>{{bio}}</p>
                 {{else}}
@@ -81,10 +81,10 @@
                 {{/if}}
                 <div class="author-meta">
                     {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}" itemprop="url">{{website}}</a></span>{{/if}}
                 </div>
             </section>
-
+        </address>
         {{/author}}
 
             <section class="share">
