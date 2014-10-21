@@ -61,11 +61,11 @@
           <div id="disqus_thread"></div>
           </section>
         
-        <footer class="post-footer">
+        <footer class="post-footer" itemscope itemtype="http://schema.org/Person">
 
         {{! Everything inside the #author tags pulls data from the author }}
         {{#author}}
-        <address itemscope itemtype="http://schema.org/Person">
+
             {{#if image}}
             <figure class="author-image">
                 <a class="img" href="{{url}}" style="background-image: url({{image}})" itemprop="image"><span class="hidden">{{name}}'s Picture</span></a>
@@ -84,7 +84,7 @@
                     {{#if website}}<span class="author-link icon-link"><a href="{{website}}" itemprop="url">{{website}}</a></span>{{/if}}
                 </div>
             </section>
-        </address>
+            
         {{/author}}
 
             <section class="share">
