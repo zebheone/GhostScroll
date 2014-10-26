@@ -14,15 +14,13 @@
             </a>
             <h1 class="blog-title">{{tag.name}}</h1>         
             <h2 class="blog-description">found {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} tagged "{{tag.name}}"</h2>
-            <div id="search">
-        <form>
-    <i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" />
-        </form>
-        <div class="post-meta" id="results"></div>
-        </div>
+            <span id="search">
+        <form><i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" /></form>
+        <span class="post-meta" id="results"></span>
+        </span>
             </div>
-            <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
                 </div>
+    <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <main id="content" class="content" role="main">
