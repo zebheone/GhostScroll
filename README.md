@@ -3,7 +3,7 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 
 =======
 
-# GhostScroll Purple Version
+# Purple Slimer
 Visit My Blog for a DEMO: http://twelvepurplepills.com
 
 * OnePage/Multiple Pages hybrid based on {{tags}}.
