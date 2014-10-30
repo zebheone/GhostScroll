@@ -6,12 +6,14 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 # Purple Slimer
 Visit My Blog for a DEMO: http://twelvepurplepills.com
 
+* Ready for Ghost 0.5.2
 * OnePage/Multiple Pages hybrid based on {{tags}}.
 * Disqus Comments.
 * Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/)
 * tag page
-* post page with post image as header background
 * author page
+* Microdata out of the box
+* post page with post image as header background
 
 ## Customization
 
