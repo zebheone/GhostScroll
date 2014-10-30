@@ -1,4 +1,5 @@
 Hello! This is a GhostScroll Fork. http://ghostscroll.grmmph.com/
+Please read "Customization" first! Write me if you like it! albi[at]twelvepurplepills.com
 
 =======
 
