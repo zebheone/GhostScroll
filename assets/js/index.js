@@ -67,7 +67,7 @@ var $post = $('.post'),
 					scrollTop: s.offset().top
 				}, 400);
 
-<<<<<<< HEAD
+
         	})
         })
 
@@ -77,6 +77,10 @@ var $post = $('.post'),
                 var w = $(window).scrollTop(),
                     g = $sitehead.offset().top,
                     h = $sitehead.offset().top + $sitehead.height()-100;
+                    
+                    
+				var paralex = 30 + w/13 + "%";
+				$sitehead.css("background-position-y", paralex);
 
                 if(w >= g && w<=h) {
                     $('.fixed-nav').fadeOut('fast')
@@ -131,7 +135,7 @@ var $post = $('.post'),
         }
     })
 
-=======
+
 			});
 		});
 
@@ -194,6 +198,6 @@ var $post = $('.post'),
 		}
 	});
 	
->>>>>>> 7321ed9... Add paralex header like all the cool kids
+
 
 }(jQuery));
