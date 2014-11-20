@@ -19,6 +19,9 @@ var $sitehead = $('#site-head');
 		}, 1000);
 	}
 	$(document).ready(function(){
+        
+        // FitVids for responsive videos
+        $('.post-content').fitVids();
 	 
 		$postholder.each(function (e) {
 			if(e % 2 != 0)
