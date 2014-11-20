@@ -94,7 +94,7 @@ body {
     font-family: 'Roboto Slab', serif;
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: #3A4145;
+    color: gim;
 }
 a.fa {
     text-decoration: none;
@@ -199,32 +199,6 @@ a.btn {
 }
 
 a.btn:hover {
-    background: #86c440;
-}
-
-a.btn_search {
-    
-    text-decoration: none;
-    background-color: #800080;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    color: black;
-    display: inline-block;
-    font-size: 10px;
-    letter-spacing: 1px;
-    margin: 0;
-    overflow: visible;
-    padding: 10px 20px 10px 20px;
-    position: relative;
-    margin-top: 2rem;
-    cursor: pointer;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: lighter;
-
-}
-
-a.btn_search:hover {
     background: #86c440;
 }
 
@@ -526,7 +500,7 @@ li {
     position: relative;
 }
 .post-holder.odd {
-    background: #0099cc;
+    background: #800080;
     color: white;
 }
 
