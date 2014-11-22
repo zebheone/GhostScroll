@@ -46,6 +46,12 @@ var $sitehead = $('#site-head');
 		$('#header-arrow').click(function () {
 			srcTo($first);
 		});
+        $('#totop-arrow').click(function () {
+            srcTo ($sitehead)
+        })
+ 
+         $('.post-title').each(function () {
+         	var t = $(this).text(),
 
 		$('.post-title').each(function () {
 			var t = $(this).text();
