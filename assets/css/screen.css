@@ -662,7 +662,7 @@ a.fn-item.active {
     display: block;
     position: absolute;
     z-index: 100;
-    bottom: 45px;
+    bottom: 10px;
     left: 50%;
     margin-left: -16px;
     width: 34px;
@@ -1143,7 +1143,7 @@ a.fn-item.active {
         background-position-y: 50%;
     }
     
-        #header-arrow {
+        #scroll-down {
         display: none;
     }
 
@@ -1263,7 +1263,7 @@ a.fn-item.active {
         padding: 10% 0;
         height: 65%;
     }
-    #header-arrow {
+    #scroll-down {
         display: none;
     }
     a.btn {
