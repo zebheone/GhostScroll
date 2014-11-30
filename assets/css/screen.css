@@ -13,7 +13,7 @@
     6.  Tag Archive
     7.  Third Party Elements
     8.  Pagination
-    9.  Footer
+    9.  Author
     10. Media Queries (Tablet)
     11. Media Queries (Mobile)
     12. Animations
@@ -971,124 +971,8 @@ a.fn-item.active {
     top: -33px;
 }
 
-
 /* ==========================================================================
-   9. Media Queries - Smaller than 1130px
-   ========================================================================== */
-
-@media only screen and (max-width: 1130px) {
-    .fixed-nav {
-        opacity: 1;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        z-index: 99999;
-        background: #f2efe8;
-        width: 100%;
-        text-align: center;
-        padding: 4px;
-    }
-    a.fn-item {
-        display: inline;
-        margin-left: 10px;
-    }
-    blockquote {
-        margin-left: 0;
-    }
-    .post-holder {
-        padding-top: 20px;
-    }
-    #site-head {
-        -webkit-box-sizing: border-box; 
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; 
-        min-height: 240px;
-        padding: 15% 0;
-        height: 100%;
-        margin-bottom: 0rem;
-        background-position-y: 50%;
-    }
-
-    .blog-title {
-        font-size: 4rem;
-        letter-spacing: -1px;
-    }
-
-    .blog-description {
-        font-size: 1.7rem;
-        line-height: 1.5em;
-    }
-
-    .post {
-        font-size: 0.9em;
-        line-height: 1.6em;
-    }
-
-    .post-template .post {
-        padding-bottom: 1rem;
-    }
-
-    .post-template .post-header {
-        padding: 40px 0;
-    }
-
-    h1 {
-        font-size: 4.8rem;
-        text-indent: -2px;
-    }
-
-    h2 {
-        font-size: 3.8rem;
-    }
-
-    h3 {
-        font-size: 3.3rem;
-    }
-
-    h4 {
-        font-size: 2.8rem;
-    }
-    
-    .author-profile {
-        padding-bottom: 4rem;
-    }
-
-    .author-profile .author-bio {
-        font-size: 1.6rem;
-    }
-
-    .author-meta span {
-        display: block;
-        margin: 1.5rem 0;
-    }
-    .author-profile .author-meta span {
-        font-size: 1.6rem;
-    }
-
-    .post-head.main-header {
-        height:45%;
-    }
-
-    .tag-head.main-header,
-    .author-head.main-header {
-        height: 30%;
-    }
-
-    .no-cover.post-head.main-header {
-        height: 55px;
-        padding: 0;
-    }
-
-    .no-cover.author-head.main-header {
-        padding: 0;
-    }
-
-}
-
-}
-
-/* ==========================================================================
-   10. Author profile
+   9. Author profile
    ========================================================================== */
 
 .post-head.main-header {
@@ -1219,6 +1103,126 @@ a.fn-item.active {
    pagination prev/next links */
 .archive-template .author-profile .author-meta {
     display: none;
+}
+
+
+/* ==========================================================================
+   10. Media Queries - Smaller than 1130px
+   ========================================================================== */
+
+@media only screen and (max-width: 1130px) {
+    .fixed-nav {
+        opacity: 1;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 99999;
+        background: #f2efe8;
+        width: 100%;
+        text-align: center;
+        padding: 4px;
+    }
+    a.fn-item {
+        display: inline;
+        margin-left: 10px;
+    }
+    blockquote {
+        margin-left: 0;
+    }
+    .post-holder {
+        padding-top: 20px;
+    }
+    #site-head {
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; 
+        min-height: 240px;
+        padding: 15% 0;
+        height: 100%;
+        margin-bottom: 0rem;
+        background-position-y: 50%;
+    }
+    
+        #header-arrow {
+        display: none;
+    }
+
+    .blog-title {
+        font-size: 4rem;
+        letter-spacing: -1px;
+    }
+
+    .blog-description {
+        font-size: 1.7rem;
+        line-height: 1.5em;
+    }
+
+    .post {
+        font-size: 0.9em;
+        line-height: 1.6em;
+    }
+
+    .post-template .post {
+        padding-bottom: 1rem;
+    }
+
+    .post-template .post-header {
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 4.8rem;
+        text-indent: -2px;
+    }
+
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    h3 {
+        font-size: 3.3rem;
+    }
+
+    h4 {
+        font-size: 2.8rem;
+    }
+    
+    .author-profile {
+        padding-bottom: 4rem;
+    }
+
+    .author-profile .author-bio {
+        font-size: 1.6rem;
+    }
+
+    .author-meta span {
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .author-profile .author-meta span {
+        font-size: 1.6rem;
+    }
+
+    .post-head.main-header {
+        height:45%;
+    }
+
+    .tag-head.main-header,
+    .author-head.main-header {
+        height: 30%;
+    }
+
+    .no-cover.post-head.main-header {
+        height: 55px;
+        padding: 0;
+    }
+
+    .no-cover.author-head.main-header {
+        padding: 0;
+    }
+
+}
+
 }
 
 
