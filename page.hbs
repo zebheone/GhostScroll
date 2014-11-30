@@ -14,12 +14,17 @@
             </a>
         <h1 class="blog-title">{{post.title}}</h1>
         <h2 class="blog-description">{{@blog.description}}</h2>
-        <a class='btn first'>read</a>
-            <a class='btn' href="{{@blog.url}}">home</a>
+        <a class='btn first'>scroll to page</a>
+            <a class='btn' href="{{@blog.url}}">back home</a>
+            
+         <div id="search">
+        <i class="fa fa-tags"></i>  <input class="blog-description" id="search-field" placeholder=" looking for something?" />
+        <span class="blog-description" id="results"></span>
+        </div>
             </div>
+            <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
                 </div>
-    <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-    </header>
+</header>
 
 <main id="content" class="content" role="main">
 

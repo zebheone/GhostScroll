@@ -12,13 +12,13 @@
         <h2 class="blog-description">{{bio}}</h2>
         <span class="author-stats"><i class="fa fa-archive"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
             
-            <span id="search">
-        <form><i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" /></form>
-        <span class="post-meta" id="results"></span>
-        </span>
+         <div id="search">
+        <i class="fa fa-tags"></i>  <input class="blog-description" id="search-field" placeholder=" looking for something?" />
+        <span class="blog-description" id="results"></span>
+        </div>
             </div>
+            <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
                 </div>
-    <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 {{/author}}

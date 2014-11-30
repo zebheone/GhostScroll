@@ -17,13 +17,13 @@
         <a class='btn first'>read post</a>
             <a class='btn' href="{{url}}#disqus_thread">comments</a>
             
-           <span id="search">
-        <form><i class="fa fa-tags"></i>  <input class="post-meta" id="search-field" placeholder=" looking for something?" /></form>
-        <span class="post-meta" id="results"></span>
-        </span>
+         <div id="search">
+        <i class="fa fa-tags"></i>  <input class="blog-description" id="search-field" placeholder=" looking for something?" />
+        <span class="blog-description" id="results"></span>
+        </div>
             </div>
+            <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
                 </div>
-    <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <main id="content" class="content" role="main">
@@ -64,8 +64,8 @@
         {{#author}}
 
             {{#if image}}
-            <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})" itemprop="image"><span class="hidden">{{name}}'s Picture</span></a>
+            <figure class="author-image" itemprop="image">
+                <a class="img" href="{{url}}" style="background-image: url({{image}})" ><span class="hidden">{{name}}'s Picture</span></a>
             </figure>
             {{/if}}
 
@@ -104,10 +104,11 @@
     {{#if tags}}{{> "recommend"}}{{/if}}
     </div>
         </footer>
-        {{/post}}
+
     
     </article>
 
     <script type="text/javascript" src= "{{asset "js/dsq_comments.js"}}"></script>
     
 </main>
+{{/post}}

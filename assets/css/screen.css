@@ -94,7 +94,7 @@ body {
     font-family: 'Roboto Slab', serif;
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: gim;
+    color: #3A4145;
 }
 a.fa {
     text-decoration: none;
@@ -660,7 +660,7 @@ a.fn-item.active {
 /* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
     display: block;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 100;
     bottom: 10px;
     left: 50%;
