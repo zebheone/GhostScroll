@@ -47,6 +47,10 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
 * Google webmaster site verification code:
 
     * Change or remove line 7 in "default.hsb"
+    
+* Footer logo
+
+     * Change or remove line 41 in "default.hsb" <img src="/content/images/pill.png" alt="Purple Pill" />
 
 =======
 
