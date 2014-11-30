@@ -17,13 +17,13 @@
         <a class='btn first'>read post</a>
             <a class='btn' href="{{url}}#disqus_thread">comments</a>
             
-         <div id="search">
-        <i class="fa fa-tags"></i>  <input class="blog-description" id="search-field" placeholder=" looking for something?" />
+         <h4 id="search"></h4>
+        <i class="fa fa-tags"></i>  <input class="blog-description" id="search-field" placeholder=" looking for something?"/>
         <span class="blog-description" id="results"></span>
-        </div>
+        
             </div>
-            <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
                 </div>
+                <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <main id="content" class="content" role="main">
@@ -39,7 +39,7 @@
       </span></a>
     </div>
 
-        <article id="{{id}}" class="{{post_class}} first">
+        <article id="{{uuid}}" class="{{post_class}} first">
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
 

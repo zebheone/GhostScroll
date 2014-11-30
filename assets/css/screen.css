@@ -660,7 +660,7 @@ a.fn-item.active {
 /* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
     display: block;
-    /*position: absolute;*/
+    position: absolute;
     z-index: 100;
     bottom: 10px;
     left: 50%;
