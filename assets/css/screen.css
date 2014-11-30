@@ -1142,10 +1142,6 @@ a.fn-item.active {
         margin-bottom: 0rem;
         background-position-y: 50%;
     }
-    
-        #scroll-down {
-        display: none;
-    }
 
     .blog-title {
         font-size: 4rem;
@@ -1263,7 +1259,7 @@ a.fn-item.active {
         padding: 10% 0;
         height: 65%;
     }
-    #scroll-down {
+    #header-arrow {
         display: none;
     }
     a.btn {
