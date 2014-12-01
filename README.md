@@ -50,7 +50,7 @@ Visit My Blog for a DEMO: http://twelvepurplepills.com
     
 * Footer logo
 
-     * Change or remove line 41 in "default.hsb" <img src="/content/images/pill.png" alt="Purple Pill" />
+     * Change or remove line 41 in "default.hsb" <img src="http://twelvepurplepills.com/content/images/pill.png" alt="Purple Pill" />
 
 =======
 
