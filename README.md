@@ -3,8 +3,8 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 
 =======
 
-<img src="http://twelvepurplepills.com/content/images/pill.png" alt="Purple Pill" /># Purple Slimer
-Visit My Blog for a DEMO: http://twelvepurplepills.com
+# Purple Slimer
+<img src="http://twelvepurplepills.com/content/images/pill.png" alt="Purple Pill" />Visit My Blog for a DEMO: http://twelvepurplepills.com
 
 * Ready for Ghost 0.5.2
 * OnePage/Multiple Pages hybrid based on {{tags}}.
