@@ -686,7 +686,7 @@ a.fn-item.active {
     display: block;
     position: absolute;
     z-index: 100;
-    bottom: 45px;
+    bottom: 10px;
     left: 50%;
     margin-left: -16px;
     width: 34px;
@@ -748,7 +748,6 @@ a.fn-item.active {
     display: block;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0.6em 0;
 }
 
 /* Stop .full-img from creating horizontal scroll - slight hack due to
