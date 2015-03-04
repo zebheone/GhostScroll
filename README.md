@@ -6,12 +6,14 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 # Purple Slimer
 <img src="http://twelvepurplepills.com/content/images/pill.png" alt="Purple Pill" />Visit My Blog for a DEMO: http://twelvepurplepills.com
 
-* Ready for Ghost 0.5.2
+* Ready for Ghost 0.5.9
 * OnePage/Multiple Pages hybrid based on {{tags}}.
+* Navigation (Ghost 0.5.9)
 * Disqus Comments.
 * Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/)
-* tag page
+* tag page with tag header background
 * author page
+* post page with header background
 * Microdata out of the box
 * post page with post image as header background
 
@@ -40,9 +42,8 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 
 * Header images:
 
-    * add a post image in order to display it as post header background (ghost 0.5.2)
-    * upload "post_cover.jpg" (ghost 0.5.1)  / "tag_cover.jpg" / "page_cover.jpg" to "/content/images/" folder in order to display different cover images
-    * Change your user cover in order to display Author cover on your Author page
+    * add a post/tag image in order to display it as post header background (from ghost 0.5.2)
+    * change your user cover in order to display author cover on your author page
     
 * Google webmaster site verification code:
 
@@ -51,6 +52,10 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 * Footer logo
 
      * Change or remove line 41 in "default.hsb"
+
+## Known Issues
+
+* post footer in post page display behavior is incorrect on screen smaller than 500px (sorry but i'm not a css specialist please HELP!)
 
 =======
 
