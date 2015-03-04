@@ -6,7 +6,8 @@
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
-                 {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+                 {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
+                    {{@blog.title}}{{/if}}
             </a>
         <h1 class="blog-title"><i class="fa fa-user"></i> {{name}}</h1>
         <h2 class="blog-description">{{bio}}</h2>
@@ -27,7 +28,7 @@
 <main id="content" class="content" role="main">
 
     <div class='fixed-nav'>
-      <a class="social" href="/about-this-blog" alt="Blog Info"><span class="fa-stack fa-lg">
+      <a class="social" href="{{@blog.url}}" alt="Back Home"><span class="fa-stack fa-lg">
 	<i class="fa fa-square-o fa-stack-2x"></i>
 	<i class="fa fa-question fa-stack-1x"></i>
       </span></a>

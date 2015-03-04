@@ -2,7 +2,7 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-    <header id="site-head" {{#post}}{{#if image}}style="background-image: url({{image}})"{{else}}style="background-image: url(/content/images/post_cover.jpg){{/if}}">{{/post}}
+    <header id="site-head" {{#post}}{{#if image}}style="background-image: url({{image}})"{{/if}}">{{/post}}
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
@@ -54,7 +54,7 @@
             {{content}}	
         </section>
         
-        <section class="post-footer">
+       <section class="post-footer">
           <div id="disqus_thread"></div>
           </section>
         
@@ -79,11 +79,11 @@
                 <div class="author-meta">
                     {{#if location}}<span class="author-location fa fa-location-arrow"> {{location}}</span>{{/if}}
                     {{#if website}}<span class="author-link fa fa-external-link"><a href="{{website}}" itemprop="url"> {{website}}</a></span>{{/if}}
+                    {{/author}}
+                    <span class="post-meta fa fa-tags"> read more about: {{tags separator=" &bullet; "}}</span>
                 </div>
             </section>
             
-        {{/author}}
-
             <section class="share">
                 <h4>Share this post</h4>
                 <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
@@ -99,10 +99,7 @@
                     <span class="hidden">Google+</span>
                 </a>
             </section>
-            <div class="author-meta">
-    {{! The tag below includes the recomended loop - partials/recommend.hbs }}
-    {{#if tags}}{{> "recommend"}}{{/if}}
-    </div>
+
         </footer>
 
     

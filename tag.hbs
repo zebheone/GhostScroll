@@ -2,7 +2,7 @@
 
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 {{! The big featured header on the homepage, with the site logo and description }}
-<header id="site-head" {{#if @blog.cover}}style="background-image: url(/content/images/tag_cover.jpg)"{{else}}style="background-image: url({{@blog.cover}}){{/if}}">
+<header id="site-head" {{#tag}}{{#if image}}style="background-image: url({{image}})"{{/if}}">{{/tag}}
     <div class="vertical">
         <div id="site-head-content" class="inner">
         <a id="blog-logo" href="{{@blog.url}}">

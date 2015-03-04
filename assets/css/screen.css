@@ -191,6 +191,7 @@ a.btn {
     padding: 10px 20px 10px 20px;
     position: relative;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -636,6 +637,15 @@ a.fn-item.active {
     float: left;
     margin-right: 9px;
     border-radius: 100%;
+}
+
+.post-meta a {
+    color: #9EABB3;
+    text-decoration: none;
+}
+
+.post-meta a:hover {
+    text-decoration: underline;
 }
 
 .user-meta {
@@ -1307,7 +1317,8 @@ a.fn-item.active {
         display: none;
     }
     a.btn {
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .blog-title {
@@ -1343,10 +1354,11 @@ a.fn-item.active {
 
     .post-meta {
         font-size: 1.3rem;
+        margin-top: 1rem;
     }
 
     .post-footer {
-        padding: 4rem 0;
+        padding: 5rem 0 3rem 0;
         text-align: center;
     }
 
@@ -1386,7 +1398,7 @@ a.fn-item.active {
     }
 
     .site-footer {
-        /*margin-top: 0.8rem;*/
+        margin-top: 0.8rem;
         font-size: 1.1rem;
     }
     
