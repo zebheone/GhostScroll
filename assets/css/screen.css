@@ -532,6 +532,11 @@ ul li {
     position: relative;
 }
 
+post-holder.odd {
+    background: #0099cc;
+    color: white;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
@@ -590,6 +595,10 @@ a.fn-item.active {
     border-right: 60px solid transparent;
     border-top: 50px solid #f2efe8;
     border-radius: 25px;
+}
+
+.post-after.even {
+    left: 6%;
 }
 
 .post-title {
