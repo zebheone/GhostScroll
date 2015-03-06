@@ -11,11 +11,9 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 * Navigation (Ghost 0.5.9)
 * Disqus Comments.
 * Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/)
-* tag page with tag header background
-* author page
-* post page with header background
+* tag page with tag header background (Ghost 0.5.8)
+* posts and pages with header background
 * Microdata out of the box
-* post page with post image as header background
 
 ## Customization
 
@@ -42,7 +40,7 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 
 * Header images:
 
-    * add a post/tag image in order to display it as post header background (from ghost 0.5.2)
+    * add a page/post/tag image in order to display it as post header background (ghost 0.5.2 - ghost 0.5.8)
     * change your user cover in order to display author cover on your author page
     
 * Google webmaster site verification code:
@@ -55,7 +53,7 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 
 ## Known Issues
 
-* post footer in post page display behavior is incorrect on screen smaller than 500px (sorry but i'm not a css specialist please HELP!)
+* Bouncing Arrow on mobile screens (sorry but i'm not a css specialist please HELP!)
 
 =======
 
