@@ -2,7 +2,7 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-    <header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}}){{/if}}">
+    <header id="site-head" {{#post}}{{#if image}}style="background-image: url({{image}})"{{/if}}">{{/post}}
         <div class="vertical">
         <div id="site-head-content" class="inner">
     <a id="blog-logo" href="{{@blog.url}}">
@@ -18,12 +18,12 @@
             <a class='btn' href="{{@blog.url}}">back home</a>
             
          <h4 id="search"></h4>
-        <i class="fa fa-tags"></i>  <input class="blog-description" id="search-field" placeholder=" looking for something?"/>
+        <i class="fa fa-tags"><input class="blog-description" id="search-field" placeholder=" looking for something?"/></i>
         <span class="blog-description" id="results"></span>
         
             </div>
                 </div>
-                <a class="scroll-down fa fa-chevron-left" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+                <a class="scroll-down fa fa-chevron-left"><span class="hidden">Scroll Down</span></a>
 </header>
 
 <main id="content" class="content" role="main">
@@ -53,6 +53,49 @@
         <section class="post-content">
             {{content}}	
         </section>
+        
+        <footer class="post-footer" itemscope itemtype="http://schema.org/Person">
+
+        {{! Everything inside the #author tags pulls data from the author }}
+        {{#author}}
+
+            {{#if image}}
+            <figure class="author-image" itemprop="image">
+                <a class="img" href="{{url}}" style="background-image: url({{image}})" ><span class="hidden">{{name}}'s Picture</span></a>
+            </figure>
+            {{/if}}
+
+            <section class="author">
+                <h4><a href="{{url}}" itemprop="name">{{name}}</a></h4>
+                {{#if bio}}
+                    <p>{{bio}}</p>
+                {{else}}
+                    <p>Read <a href="{{url}}">all posts</a> by this author.</p>
+                {{/if}}
+                <div class="author-meta">
+                    {{#if location}}<span class="author-location fa fa-location-arrow"> {{location}}</span>{{/if}}
+                    {{#if website}}<span class="author-link fa fa-external-link"><a href="{{website}}" itemprop="url"> {{website}}</a></span>{{/if}}
+                    {{/author}}
+                </div>
+            </section>
+            
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
 
         {{/post}}
 
