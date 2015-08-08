@@ -51,10 +51,6 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 
      * Change or remove line 41 in "default.hsb"
 
-## Known Issues
-
-* Bouncing Arrow on mobile screens (sorry but i'm not a css specialist please HELP!)
-
 =======
 
 Feel free to use this theme, just write me and let me know! albi[at]twelvepurplepills.com
