@@ -73,9 +73,11 @@ var $sitehead = $('#site-head');
 				var g = $sitehead.offset().top;
 				var h = $sitehead.offset().top + $sitehead.height()-100;
 				
-				var paralex = 30 + w/13 + "%";
-    			$sitehead.css("background-position-y", paralex);
-
+				/*var paralex = 30 + w/13 + "%";
+    			$sitehead.css("background-position-y", paralex); */
+                
+    			$sitehead.css("background-position-y");
+                
 				if(w >= g && w<=h) {
 					$('.fixed-nav').fadeOut('fast');
 				} else if($(window).width()>500) {
