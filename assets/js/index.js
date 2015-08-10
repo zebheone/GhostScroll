@@ -61,7 +61,7 @@ var $sitehead = $('#site-head');
 
 				$('html, body').animate({
 					scrollTop: s.offset().top
-				}, 400);
+				}, 100);
 
 			});
 		});
@@ -81,7 +81,7 @@ var $sitehead = $('#site-head');
 				if(w >= g && w<=h) {
 					$('.fixed-nav').fadeOut('fast');
 				} else if($(window).width()>500) {
-					$('.fixed-nav').fadeIn('fast');
+					$('.fixed-nav').fadeIn('slow');
 				}
 
 				$post.each(function () {
