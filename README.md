@@ -6,7 +6,7 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 # Purple Slimer
 <img src="http://twelvepurplepills.com/content/images/pill.png" alt="Purple Pill" />Visit My Blog for a DEMO: http://twelvepurplepills.com
 
-* Ready for Ghost 0.5.9
+* Ready for Ghost 0.6.4
 * OnePage/Multiple Pages hybrid based on {{tags}}.
 * Navigation (Ghost 0.5.9)
 * Disqus Comments.
@@ -21,6 +21,10 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
   
     * file: partials/loop.hbs
     * line 25: {{content characters="700"}} // if tags found, show only 700 characters, else all characters are shown.
+    
+* Links in navigation left menu
+  
+    * file: partials/pagination.hbs
   
 * Disqus Comments
   
@@ -40,7 +44,7 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 
 * Header images:
 
-    * add a page/post/tag image in order to display it as post header background (ghost 0.5.2 - ghost 0.5.8)
+    * add a page/post/tag image in order to display it as post header background (from ghost 0.5.2)
     * change your user cover in order to display author cover on your author page
     
 * Google webmaster site verification code:
