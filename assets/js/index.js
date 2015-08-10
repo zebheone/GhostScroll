@@ -61,7 +61,7 @@ var $sitehead = $('#site-head');
 
 				$('html, body').animate({
 					scrollTop: s.offset().top
-				}, 100);
+				}, 0);
 
 			});
 		});
