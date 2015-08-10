@@ -1,0 +1,18 @@
+    <div class='fixed-nav'>
+      <a class="social" href="/about-this-blog" title="About this Blog"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-question fa-stack-1x"></i>
+      </span></a>
+      <a id="totop-arrow" title="Back to top"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-angle-up fa-stack-1x"></i>
+      </span></a>
+        {{#if pagination.prev}}<a class="prev" href="/page/{{pagination.prev}}" title="Newer posts"><span class="fa-stack fa-lg">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-angle-left fa-stack-1x"></i>
+      </span></a>{{/if}}
+	{{#if pagination.next}}<a class="next" href="/page/{{pagination.next}}" title="Older posts"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-angle-right fa-stack-1x"></i>
+      </span></a>{{/if}}
+    </div>
