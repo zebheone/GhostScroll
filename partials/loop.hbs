@@ -8,7 +8,7 @@
                 <article id="{{uuid}}" class="{{post_class}} first" itemscope itemtype="http://schema.org/Article">
             {{else}}
                 {{#if @last}}
-                    <article id="{{uuid}}" class="{{post_class}}" itemscope itemtype="http://schema.org/Article">
+                    <article id="{{uuid}}" class="{{post_class}} last" itemscope itemtype="http://schema.org/Article">
                 {{else}}
                     <article id="{{uuid}}" class="{{post_class}}" itemscope itemtype="http://schema.org/Article">
                 {{/if}}
