@@ -1,5 +1,5 @@
 Hello! This is a GhostScroll Fork. http://ghostscroll.grmmph.com/
-Please read "Customization" first! Write me if you like it! albi[at]twelvepurplepills.com
+Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelvepurplepills.com
 
 =======
 
@@ -8,12 +8,14 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
 
 * Ready for Ghost 0.6.4
 * OnePage/Multiple Pages hybrid based on {{tags}}.
-* Navigation (Ghost 0.5.9)
+* Navigation
+* Pagination.
 * Disqus Comments.
-* Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/)
-* tag page with tag header background (Ghost 0.5.8)
-* posts and pages with header background
-* Microdata out of the box
+* Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/).
+* Tag page with tag header background (Ghost 0.5.8).
+* Posts and pages with header background.
+* FontAwesome. (with no code, just type @fa-example-icon-text@).
+* Microdata out of the box.
 
 ## Customization
 
@@ -37,10 +39,8 @@ Please read "Customization" first! Write me if you like it! albi[at]twelvepurple
     * You have to git clone GhostHunter project in this dir: .../assets/js/
     * git clone git@github.com:i11ume/ghostHunter.git
     * follow the readme https://github.com/i11ume/ghostHunter/
-  
-* GhostScroll basic usage and customization
-
-    * follow the website how-to http://ghostscroll.grmmph.com/
+    
+* FontAwesome. Some icons included and ready to use in Ghost editor (just type @fa-example-icon-text@, if you want more edit /assets/js/icons.js and add some from FontAwesome)
 
 * Header images:
 
