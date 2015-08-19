@@ -51,6 +51,10 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
 
     * Change or remove line 7 in "default.hsb"
     
+* Favicon
+
+    * Add your image in the "assets/images" folder and change line 11 in file "default.hbs" if needed
+    
 * Footer logo
 
      * Change or remove line 41 in "default.hsb"
