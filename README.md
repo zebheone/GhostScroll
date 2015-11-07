@@ -6,7 +6,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
 # Purple Slimer
 <img src="http://twelvepurplepills.com/content/images/pill.png" alt="Purple Pill" />Visit My Blog for a DEMO: http://twelvepurplepills.com
 
-* Ready for Ghost 0.6.4
+* Ready for Ghost 0.7.0
 * OnePage/Multiple Pages hybrid based on {{tags}}.
 * Navigation
 * Pagination.
