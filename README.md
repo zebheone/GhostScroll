@@ -6,7 +6,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
 # Purple Slimer
 <img src="http://twelvepurplepills.com/content/images/pill.png" alt="Purple Pill" />Visit My Blog for a DEMO: http://twelvepurplepills.com
 
-* Ready for Ghost 0.7.1
+* Ready for Ghost 0.7.4
 * OnePage/Multiple Pages hybrid based on {{tags}}.
 * Navigation
 * Pagination.
@@ -54,10 +54,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
 * Favicon
 
     * Add your image in the "assets/images" folder and change line 11 in file "default.hbs" if needed
-    
-* Footer logo
 
-     * Change or remove line 41 in "default.hsb"
 
 =======
 
