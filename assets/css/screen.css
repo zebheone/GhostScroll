@@ -495,7 +495,7 @@ li {
     padding-bottom: 4rem;
     padding-top: 4rem;
     height: 70%;
-    word-break: break-word;
+    word-break: keep-all;
     hyphens: auto;
 
 }
