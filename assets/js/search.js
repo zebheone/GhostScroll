@@ -1,6 +1,6 @@
         var searchField = $("#search-field").ghostHunter({
                                 results         : "#results",
-                                info_template   : "<p>{{amount}} Post/s found</p>",
+                                info_template   : "<p>{{amount}} found</p>",
                                 result_template : "<a href='{{link}}'>{{title}}</a>  ",
                             rss       : "/rss",
                             //Enable the "search as you type" by uncommenting the following line
