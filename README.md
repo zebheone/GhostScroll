@@ -11,7 +11,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
 * Navigation
 * Pagination.
 * Disqus Comments.
-* Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/).
+* Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/). ghostHunter search engine now uses Ghost Public Api. enable Public Api from Settings/Labs
 * Tag page with tag header background (Ghost 0.5.8).
 * Posts and pages with header background.
 * FontAwesome. (with no code, just type @fa-example-icon-text@).
@@ -36,6 +36,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
   
 * GhostHunter
 
+    * ghostHunter search engine now uses Ghost Public Api. enable Public Api from Settings/Labs
     * You have to git clone GhostHunter project in this dir: .../assets/js/
     * git clone git@github.com:i11ume/ghostHunter.git
     * follow the readme https://github.com/i11ume/ghostHunter/
