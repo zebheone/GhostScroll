@@ -54,7 +54,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
     
 * Favicon
 
-    * Add your image in the "assets/images" folder and change line 11 in file "default.hbs" if needed
+    * Add your "favicon.ico" in the "assets/images" folder and change line 11 in file "default.hbs" if needed
 
 
 =======
