@@ -30,6 +30,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
   
 * Disqus Comments
   
+    * create a Disqus account and get your Disqus Shortname
     * file: assets/js/dsq_comments.js and assets/js/dsq_comments_count.js
     * FIRST THING TO DO! line 2: change 'twelvepurplepills' with your Disqus Shortname
     * BEWARE of the unique ID, I don't use it.
@@ -45,7 +46,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it! albi[at]twelv
 
 * Header images:
 
-    * add a page/post/tag image in order to display it as post header background (from ghost 0.5.2)
+    * add a page/post/tag image in order to display it as post header background
     * change your user cover in order to display author cover on your author page
     
 * Google webmaster site verification code:
