@@ -75,13 +75,10 @@ var $sitehead = $('#site-head');
 		highlightActiveSection();
 
 		function conditionallyShowNav() {
-			var navOpacity = shouldDisplayNav() ? 1 : 0;
+      var isTooNarrow = $(window).width() < 500;
+      var shouldDisplayNav = !isTooNarrow && !isElementInViewport($sitehead);
+			var navOpacity = shouldDisplayNav ? 1 : 0;
 			$(".fixed-nav").css("opacity", navOpacity);
-
-			function shouldDisplayNav() {
-				var isTooNarrow = $(window).width() < 500;
-				return (!isTooNarrow && !isElementInViewport($sitehead));
-			}
 		}
 
 		function highlightActiveSection() {
