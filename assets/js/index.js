@@ -10,10 +10,10 @@ var $sitehead = $('#site-head');
 /* Globals jQuery, document */
 (function ($) {
 	"use strict";
-	function srcTo (el) {
+	function smoothScroll (el) {
 		$('html, body').animate({
 			scrollTop: el.offset().top
-		}, 1000);
+		}, 400);
 	}
 	$(document).ready(function(){
         
@@ -22,32 +22,22 @@ var $sitehead = $('#site-head');
 	 
 		$('.btn.first, #header-arrow').click( function () {
             var $first = $post.first();
-			srcTo($first);
+			smoothScroll($first);
 		});
 		$('.btn.last').click( function () {
             var $last = $post.last();
-			srcTo($last);
+			smoothScroll($last);
 		});
 
         $('#totop-arrow').click(function () {
             srcTo($sitehead);
         });
 
-		$('.post-title').each(function () {
-			var t = $(this).text();
-			var index = $(this).parents('.post-holder').index();
-			$fnav.append("<a class='fn-item' item_index='"+index+"'>"+t+"</a>")
-			$(this).parents('article').attr('id',t.toLowerCase().split(' ').join('-'));
-			$('.fn-item').last().click(function () {
-				var i = $(this).attr('item_index');
-				var s = $(".post[item_index='"+i+"']");
-
-				$('html, body').animate({
-					scrollTop: s.offset().top
-				}, 0);
-
-			});
-		});
+        $('.fn-item').click(function (evt) {
+            evt.preventDefault();
+            var slug = $(this).attr("href");
+            smoothScroll($(slug))
+        });
 
 		if($sitehead.length) { 
 			$(window).scroll( function () {

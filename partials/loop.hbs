@@ -1,16 +1,16 @@
 {{! Previous/next page links - only displayed on page 2+ }}
 
 {{! This is the post loop - each post will be output using this markup }}
-{{#foreach posts}}
+ {{#posts}}
     <div class='post-holder'>
         
             {{#if @first}}
-                <article id="{{uuid}}" class="{{post_class}} first" itemscope itemtype="http://schema.org/Article">
+                <article id="{{uuid}}" class="{{post_class}} id="{{slug}} first" itemscope itemtype="http://schema.org/Article">
             {{else}}
                 {{#if @last}}
-                    <article id="{{uuid}}" class="{{post_class}} last" itemscope itemtype="http://schema.org/Article">
+                    <article id="{{uuid}}" class="{{post_class}} id="{{slug}} last" itemscope itemtype="http://schema.org/Article">
                 {{else}}
-                    <article id="{{uuid}}" class="{{post_class}}" itemscope itemtype="http://schema.org/Article">
+                    <article id="{{uuid}}" class="{{post_class}} id="{{slug}}" itemscope itemtype="http://schema.org/Article">
                 {{/if}}
             {{/if}}
         
@@ -48,4 +48,4 @@
         {{/if}}
     </div>
 
-    {{/foreach}}
+     {{/posts}}
