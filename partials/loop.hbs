@@ -1,6 +1,7 @@
 {{! Previous/next page links - only displayed on page 2+ }}
 
 {{! This is the post loop - each post will be output using this markup }}
+    <div id="posts-wrapper">
     {{#posts}}
         <div class='post-holder' id="{{slug}}">
         
@@ -46,6 +47,7 @@
         {{^if @last}}
             <div class='post-after'></div>
         {{/if}}
-    </div>
+        </div>
 
      {{/posts}}
+   </div>
