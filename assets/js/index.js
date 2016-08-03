@@ -88,15 +88,15 @@ var $sitehead = $('#site-head');
 			$(".post-holder").each(function () {
 				var $this = $(this);
 				var postId = $this.attr("id");
-				var thisNavLink = $(".fn-item[href='#" + postId + "']");
-				var previousArrow = $(this).prev('.post-holder').find('.post-after');
+				var $thisNavLink = $(".fn-item[href='#" + postId + "']");
+				var $previousArrow = $(this).prev('.post-holder').find('.post-after');
 
 				if(isElementInViewport($this)) {
-					thisNavLink.addClass('active');
-					previousArrow.fadeOut('slow');
+					$thisNavLink.addClass('active');
+					$previousArrow.fadeOut('slow');
 				} else {
-					thisNavLink.removeClass('active');
-					previousArrow.fadeIn('slow');
+					$thisNavLink.removeClass('active');
+					$previousArrow.fadeIn('slow');
 				}
 			});
 		}
@@ -113,9 +113,9 @@ var $sitehead = $('#site-head');
 		}
 	}
 
-	function smoothScroll (el) {
+	function smoothScroll ($element) {
 		$('html, body').animate({
-			scrollTop: el.offset().top
+			scrollTop: $element.offset().top
 		}, 400);
 	}
 
