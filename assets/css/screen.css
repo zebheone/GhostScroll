@@ -549,7 +549,6 @@ a.fn-item.active {
     border-radius: 25px;
 }
 
-.post-after.even {
 .post-holder:nth-child(even) > .post-after {
     left: 6%;
     border-top-color: #f2efe8;
