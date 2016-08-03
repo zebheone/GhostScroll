@@ -45,9 +45,6 @@
         </div>
     </footer>
 
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
-
     {{! The main JavaScript file for GhostScroll }}
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -56,6 +53,9 @@
     <script type="text/javascript" src= "{{asset "js/ghostHunter/jquery.ghostHunter.min.js"}}"></script>
     <script type="text/javascript" src= "{{asset "js/search.js"}}"></script>
     <script type="text/javascript" src= "{{asset "js/dsq_comments_count.js"}}"></script>
+    
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
 
 </body>
 </html>
