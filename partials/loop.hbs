@@ -1,16 +1,16 @@
 {{! Previous/next page links - only displayed on page 2+ }}
 
 {{! This is the post loop - each post will be output using this markup }}
- {{#posts}}
-    <div class='post-holder'>
+    {{#posts}}
+        <div class='post-holder' id="{{slug}}">
         
             {{#if @first}}
-                <article id="{{slug}}" class="{{post_class}} first" itemscope itemtype="http://schema.org/Article">
+                <article id="{{uuid}}" class="{{post_class}} first" itemscope itemtype="http://schema.org/Article">
             {{else}}
                 {{#if @last}}
-                    <article id="{{slug}}" class="{{post_class}} last" itemscope itemtype="http://schema.org/Article">
+                    <article id="{{uuid}}" class="{{post_class}} last" itemscope itemtype="http://schema.org/Article">
                 {{else}}
-                    <article id="{{slug}}" class="{{post_class}}" itemscope itemtype="http://schema.org/Article">
+                    <article id="{{uuid}}" class="{{post_class}}" itemscope itemtype="http://schema.org/Article">
                 {{/if}}
             {{/if}}
         
