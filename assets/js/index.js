@@ -18,23 +18,19 @@ var $sitehead = $('#site-head');
 		fontAwesomeReplacement();
 
 		function setupJumpHandlers() {
+<<<<<<< HEAD
                     // FitVids for responsive videos
             $('.post-content').fitVids();
                     // Arrow top in fixed menu
             $('#totop-arrow').click(function () {
             smoothScroll($sitehead);
             });
-			$('.btn.first, #header-arrow').click( function () {
+			$('#header-arrow').click( function () {
 				var $first = $(".post").first();
 				smoothScroll($first);
 			});
 
-			$('.btn.last').click( function () {
-				var $last = $(".post").last();
-				smoothScroll($last);
-			});
-
-			$('.fn-item').click(function (evt) {
+			$('.fn-item, .btn').click(function (evt) {
 				evt.preventDefault();
 				var slug = $(this).attr("href");
 				smoothScroll($(slug))
