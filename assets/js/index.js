@@ -20,8 +20,6 @@ var $sitehead = $('#site-head');
         // FitVids for responsive videos
         $('.post-content').fitVids();
 	 
-		$('.btn.first').click( function () {
-
 		$('.btn.first, #header-arrow').click( function () {
             var $first = $post.first();
 			srcTo($first);
@@ -30,9 +28,7 @@ var $sitehead = $('#site-head');
             var $last = $post.last();
 			srcTo($last);
 		});
-		$('#header-arrow').click(function () {
-			srcTo($first);
-		});
+
         $('#totop-arrow').click(function () {
             srcTo($sitehead);
         });
