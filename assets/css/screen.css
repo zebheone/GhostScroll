@@ -481,11 +481,8 @@ li {
     position: relative;
 }
 
-.post-holder.odd {
-    background: #800080;
-
 .post-holder:nth-of-type(odd) {
-    background: #0099cc;
+    background: #800080;
     color: white;
 }
 

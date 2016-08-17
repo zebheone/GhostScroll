@@ -43,9 +43,9 @@
             </section>
 
         </article>
-        <div class='post-after'></div>
+        {{^if @last}}
+            <div class='post-after'></div>
+        {{/if}}
     </div>
 
     {{/foreach}}
-
-{{! Previous/next page links - displayed on every page }}
