@@ -542,7 +542,7 @@ a.fn-item.active {
     height: 0; 
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-top: 50px solid #0099cc;
+    border-top: 50px solid #800080;
     border-radius: 25px;
 }
 
