@@ -18,7 +18,6 @@ var $sitehead = $('#site-head');
 		fontAwesomeReplacement();
 
 		function setupJumpHandlers() {
-<<<<<<< HEAD
                     // FitVids for responsive videos
             $('.post-content').fitVids();
                     // Arrow top in fixed menu
