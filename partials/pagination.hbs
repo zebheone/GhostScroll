@@ -1,7 +1,4 @@
     <div class='fixed-nav'>
-        {{#posts}}
-            <a href="#{{slug}}" class="fn-item">{{title}}</a>
-        {{/posts}}
       <a class="social" href="/about-this-blog" title="About this Blog"><span class="fa-stack fa-lg">
 	<i class="fa fa-square-o fa-stack-2x"></i>
 	<i class="fa fa-question fa-stack-1x"></i>
@@ -18,4 +15,7 @@
 	<i class="fa fa-square-o fa-stack-2x"></i>
 	<i class="fa fa-angle-right fa-stack-1x"></i>
       </span></a>{{/if}}
+      {{#posts}}
+             <a href="#{{slug}}" class="fn-item">{{title}}</a>
+      {{/posts}}
     </div>

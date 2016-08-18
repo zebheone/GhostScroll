@@ -30,7 +30,7 @@ var $sitehead = $('#site-head');
 		});
 
         $('#totop-arrow').click(function () {
-            srcTo($sitehead);
+            smoothScroll($sitehead);
         });
 
         $('.fn-item').click(function (evt) {
