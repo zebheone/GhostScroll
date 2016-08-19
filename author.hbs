@@ -9,7 +9,7 @@
                  {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
                     {{@blog.title}}{{/if}}
             </a>
-        <h1 class="blog-title"><i class="fa fa-user"></i> {{name}}</h1>
+        <h1 class="blog-title"><i class="fa fa-user-secret"></i> {{name}}</h1>
         <h2 class="blog-description">{{bio}}</h2>
         <span class="author-stats"><i class="fa fa-archive"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
             
