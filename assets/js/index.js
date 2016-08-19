@@ -28,6 +28,11 @@ var $sitehead = $('#site-head');
 				var $first = $(".post").first();
 				smoothScroll($first);
 			});
+            
+            $('.btn.first').click( function () {
+			    var $first = $(".post").first();
+				smoothScroll($first);
+		    });
 
 			$('.fn-item, .btn').click(function (evt) {
         var $this = $(this);
