@@ -34,7 +34,7 @@ var $sitehead = $('#site-head');
 				smoothScroll($first);
 		    });
 
-			$('.fn-item, .btn').click(function (evt) {
+			$('.fn-item').click(function (evt) {
         var $this = $(this);
 				var href = $this.attr("href");
 
