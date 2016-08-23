@@ -521,8 +521,8 @@ li {
 
     transition: opacity 0.4s ease-in-out;
 
-    // Workaround for penthouse issue #130
-    // https://github.com/pocketjoso/penthouse/issues/130
+    /* Workaround for penthouse issue #130 */
+    /* https://github.com/pocketjoso/penthouse/issues/130 */
     &:after {
       z-index: 1;
     }

@@ -15,7 +15,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it, problems, fea
 * Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/). ghostHunter search engine now uses Ghost Public Api. enable Public Api from Settings/Labs
 * Tag page with tag header background.
 * Posts and pages with header background.
-* FontAwesome. (with no code, just type @fa-example-icon-text@). http://fontawesome.io/icons/
+* FontAwesome.
 * Microdata out of the box.
 
 ## Customization
