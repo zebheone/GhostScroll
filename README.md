@@ -1,5 +1,5 @@
 Hello! This is a GhostScroll Fork. http://ghostscroll.grmmph.com/
-Great performance and overall improvement thanks to "hbaughman" https://github.com/hbaughman
+Great performance and overall improvement thanks to @hbaughman
 Please READ "Customization" BEFORE USING! Write me if you like it, problems, features! albi[at]twelvepurplepills.com
 
 =======
