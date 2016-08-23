@@ -24,11 +24,12 @@ var $sitehead = $('#site-head');
             $('#totop-arrow').click(function () {
             smoothScroll($sitehead);
             });
+            
 			$('#header-arrow').click( function () {
 				var $first = $(".post").first();
 				smoothScroll($first);
 			});
-            
+                // Arrow and Button down in the header
             $('.btn.first').click( function () {
 			    var $first = $(".post").first();
 				smoothScroll($first);
