@@ -13,9 +13,14 @@ var $sitehead = $('#site-head');
 	$(window).scroll(onViewportChange);
 
 	function initialize() {
+        hideFixedNav();
 		setupJumpHandlers();
 		fontAwesomeDecorators();
 		fontAwesomeReplacement();
+        
+        function hideFixedNav() {
+      $(".fixed-nav").hide();
+    }
 
 		function setupJumpHandlers() {
                     // FitVids for responsive videos
@@ -80,6 +85,7 @@ var $sitehead = $('#site-head');
 	
   var $sitehead = $('#site-head');
   var isDisplayingNav = false;
+  var delayedHide;
 	function onViewportChange() {
     var shouldDisplay = shouldDisplayNav();
     if (shouldDisplay) {
@@ -103,6 +109,18 @@ var $sitehead = $('#site-head');
 
 		function conditionallyShowNav() {
       var $fixedNav = $(".fixed-nav");
+
+      if(shouldDisplay) {
+        $fixedNav.show();
+      }
+      else {
+        // See `.fixed-nav` from `assets/sass/main.scss`
+        var transitionTime = 400;
+        delayedHide = setTimeout(function() {
+          $fixedNav.hide();
+        }, transitionTime)
+      }
+
 			var navOpacity = shouldDisplay ? 1 : 0;
 			$fixedNav.css("opacity", navOpacity);
 		}
