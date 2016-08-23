@@ -78,15 +78,33 @@ var $sitehead = $('#site-head');
 		}
 	}
 	
+  var $sitehead = $('#site-head');
+  var isDisplayingNav = false;
 	function onViewportChange() {
-		conditionallyShowNav();
-		highlightActiveSection();
+    var shouldDisplay = shouldDisplayNav();
+    if (shouldDisplay) {
+      highlightActiveSection();
+    }
+    if (didShowNavChange()) {
+      conditionallyShowNav();
+    }
+    isDisplayingNav = shouldDisplay;
+
+    function shouldDisplayNav() {
+      var isTooNarrow = $(window).width() < 500;
+      var shouldDisplay = !isTooNarrow && !isElementInViewport($sitehead);
+      return shouldDisplay;
+    }
+
+    function didShowNavChange() {
+      var stateDidChange = (shouldDisplay !== isDisplayingNav);
+      return stateDidChange;
+    }
 
 		function conditionallyShowNav() {
-      var isTooNarrow = $(window).width() < 500;
-      var shouldDisplayNav = !isTooNarrow && !isElementInViewport($sitehead);
-			var navOpacity = shouldDisplayNav ? 1 : 0;
-			$(".fixed-nav").css("opacity", navOpacity);
+      var $fixedNav = $(".fixed-nav");
+			var navOpacity = shouldDisplay ? 1 : 0;
+			$fixedNav.css("opacity", navOpacity);
 		}
 
 		function highlightActiveSection() {
