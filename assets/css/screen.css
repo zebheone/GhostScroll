@@ -604,9 +604,8 @@ a.fn-item.active {
     margin-right: 9px;
     border-radius: 100%;
     overflow: hidden;
-    padding: 6px;
+    padding: 1px;
     background: #E7EEF2;
-    z-index: 2;
     box-shadow: #E7EEF2 0 0 0 1px;
 }
 
