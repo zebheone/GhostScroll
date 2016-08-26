@@ -16,7 +16,7 @@
             {{/if}}
         
             <header class="post-header">
-                {{#if image}}<img class="post-thumb" src="{{image}}" alt="post image" nopin="nopin" />{{/if}}
+                {{#if image}}<a href="{{url}}"><img class="post-thumb" src="{{image}}" alt="post image" nopin="nopin" /></a>{{/if}}
                 <h2 class="post-title" itemprop="headline"><a href="{{url}}">{{title}}</a></h2>
                 <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a>  {{#if featured}}<span style="color:#F40034;">&#10029;</span> Featured{{/if}} </span>
             </header>
