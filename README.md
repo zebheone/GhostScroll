@@ -11,6 +11,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it, problems, fea
 * OnePage/Multiple Pages hybrid based on {{tags}}.
 * Navigation.
 * Pagination.
+* Featured Post.
 * Disqus Comments.
 * Site search based on RSS feed. GhostHunter https://github.com/i11ume/ghostHunter/ (clone it to .../assets/js/). ghostHunter search engine now uses Ghost Public Api. enable Public Api from Settings/Labs
 * Tag page with tag header background.
