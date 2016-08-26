@@ -16,14 +16,14 @@
             {{/if}}
         
             <header class="post-header">
-                {{#if image}}<img class="post-thumb" src="{{image}}" alt="post image" nopin="nopin" />{{/if}}
+                {{#if image}}<a href="{{url}}"><img class="post-thumb" src="{{image}}" alt="post image" nopin="nopin" /></a>{{/if}}
                 <h2 class="post-title" itemprop="headline"><a href="{{url}}">{{title}}</a></h2>
-                <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a> </span>
+                <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} <i class="fa fa-comments-o"></i> <a href="{{url}}#disqus_thread">Comments</a>  {{#if featured}}<span style="color:#F40034;">&#10029;</span> Featured{{/if}} </span>
             </header>
             
             <section class="post-content" itemprop="articleBody">
                  {{#if tags}}
-                    <p class="post-description">{{content characters="700"}} 
+                    <p class="post-description">{{content characters="700"}}  </p>
                     <a class='btn' href="{{url}}" >read more &raquo;</a>
                 <a class='btn' href="https://www.facebook.com/sharer/sharer.php?u={{@blog.url}}{{url}}"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
@@ -37,9 +37,9 @@
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="fa fa-google-plus"></i><span class="hidden">Google+</span>
                 </a>
-                    </p>
+                   
                 {{else}}
-                    <p class="post-description">{{content characters="9999999999999"}}</p>
+                    <p class="post-description">{{content}}</p>
                 {{/if}}
             </section>
 

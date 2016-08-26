@@ -595,11 +595,18 @@ a.fn-item.active {
 }
 
 .post-thumb {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     width: 80px;
     height: 80px;
     float: left;
     margin-right: 9px;
     border-radius: 100%;
+    overflow: hidden;
+    padding: 1px;
+    background: #E7EEF2;
+    box-shadow: #E7EEF2 0 0 0 1px;
 }
 
 .author-thumb {
