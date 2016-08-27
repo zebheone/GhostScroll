@@ -48,11 +48,13 @@
         {{#post}}
         <article id="{{uuid}}" class="{{post_class}} first">
         {{! Everything below outputs content of the the post which has been published }}
+        
+         <section class="post-content">
 
-		<span class="post-meta"><i class="fa fa-leaf"></i> {{title}}  <i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} </span>
+		<span class="post-meta"><i class="fa fa-leaf"></i> {{title}}  <i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} {{#if featured}}<span style="color:#F40034;">&#10029;</span> Featured{{/if}} </span>
 
         <section class="post-content">
-            {{content}}	
+            {{content}}
         </section>
         
        <footer class="post-footer">
@@ -84,7 +86,7 @@
                 </div>
             </section>
             
-            {{#if tags}}<section class="author">{{> "recommend"}}</section>{{/if}}
+            {{#if tags}}{{> "recommend"}}{{/if}}
             
             <section class="share">
                 <h4>Share this post</h4>
