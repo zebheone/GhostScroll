@@ -834,12 +834,12 @@ a.fn-item.active {
     margin: 4rem auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #22343A;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: white;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -847,12 +847,28 @@ a.fn-item.active {
 .newer-posts {
     position: absolute;
     display: inline-block;
-    padding: 0 15px;
-    border: #EBF2F6 2px solid;
     text-decoration: none;
-    border-radius: 30px;
-    transition: border ease 0.3s;
+    background-color: #800080;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    overflow: visible;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+
 }
+
+.older-posts:hover,
+.newer-posts:hover {
+    background: #86c440;
+}
+
 
 .older-posts {
     right: 0;
@@ -865,11 +881,6 @@ a.fn-item.active {
 
 .newer-posts {
     left: 0;
-}
-
-.older-posts:hover,
-.newer-posts:hover {
-    border-color: #9EABB3;
 }
 
 
