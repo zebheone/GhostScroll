@@ -5,7 +5,7 @@
 /*
 
     0.  Normalize
-    1.  Iconss
+    1.  Icons
     2.  General
     3.  Utilities
     4.  Styles
@@ -489,6 +489,16 @@ li {
     vertical-align: middle;
 }
 
+/* Wraps the main content & footer */
+.site-wrapper {
+    position: relative;
+    z-index: 10;
+    min-height: 100%;
+    background: #fff;
+    -webkit-transition: -webkit-transform 0.5s ease;
+            transition: transform 0.5s ease;
+}
+
 
 /* ==========================================================================
    4. Styles - The main styles for the the theme
@@ -769,6 +779,48 @@ a.fn-item.active {
     animation: none;
 }
 
+/* Put a semi-opaque radial gradient behind the icon to make it more visible
+   on photos which happen to have a light background. */
+.home-template .main-header:after {
+    display: block;
+    content: " ";
+    width: 150px;
+    height: 130px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -75px;
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,0) 70%,rgba(0,0,0,0) 100%);
+}
+
+.subscribe-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    height: 38px;
+    padding: 0 20px;
+    color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
+    text-align: center;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 35px;
+    border-radius: 3px;
+    background: #fff;
+    transition: all ease 0.3s;
+}
+.subscribe-button:before {
+    font-size: 9px;
+    margin-right: 6px;
+}
+
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */
@@ -790,12 +842,24 @@ a.fn-item.active {
     padding: 60px 0;
 }
 
-/* Keep large images within the bounds of the post-width */
+/* Keep images centered, and allow images wider than the main
+   text column to break out. */
 .post-content img {
     display: block;
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
+    /* Centers an image by (1) pushing its left edge to the
+       center of its container and (2) shifting the entire image
+       in the opposite direction by half its own width.
+       Works for images that are larger than their containers. */
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* for Safari and iOS */
+    -ms-transform: translateX(-50%); /* for IE9 */
+    transform: translateX(-50%);
 }
+
 
 /* Stop .full-img from creating horizontal scroll - slight hack due to
    imperfections with browser width % calculations and rounding */
@@ -807,7 +871,7 @@ a.fn-item.active {
 .post-footer {
     position: relative;
     margin: 6rem 0 0 0;
-    padding: 6rem 0 0 0;
+    padding: 3rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
 
@@ -860,7 +924,7 @@ a.fn-item.active {
    links remain at a fixed width the whole time */
 .post-footer .share {
     position: absolute;
-    top: 6rem;
+    top: 3rem;
     right: 0;
     width: 140px;
 }
@@ -1187,8 +1251,8 @@ a.fn-item.active {
     margin: 0rem 0 0 0;
     padding: 1rem 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.5em;
+    font-size: 1rem;
+    line-height: 1.75em;
     color: #BBC7CC;
     text-align: center;
     background: #22343A;
@@ -1196,7 +1260,8 @@ a.fn-item.active {
 
 .site-footer a {
     color: #BBC7CC;
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .site-footer a:hover {
