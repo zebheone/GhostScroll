@@ -83,10 +83,9 @@
                     {{#if location}}<span class="author-location fa fa-location-arrow"> {{location}}</span>{{/if}}
                     {{#if website}}<span class="author-link fa fa-external-link"><a href="{{website}}" itemprop="url"> {{website}}</a></span>{{/if}}
                     {{/author}}
+                    {{#if tags}}<span class="author-location fa fa-tags"> Read more about: {{tags separator=" &bullet; "}}</span>{{/if}}
                 </div>
             </section>
-            
-            {{#if tags}}{{> "recommend"}}{{/if}}
             
             <section class="share">
                 <h4>Share this post</h4>
@@ -106,11 +105,13 @@
 
         </footer>
     
-    
     <script type="text/javascript" src= "{{asset "js/dsq_comments.js"}}"></script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </article>
     
+    {{!-- Links to Previous/Next posts --}}
+    {{> "recommend"}}
+
     {{/post}}
     </div>
 </main>

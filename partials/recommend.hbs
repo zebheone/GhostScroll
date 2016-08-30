@@ -1,13 +1,20 @@
-
-    <section class="author">
-        <div class="author-meta"> 
-            <span class="author-location fa fa-tags"> Read more about: {{tags separator=" &bullet; "}}</span> 
-            {{#get "posts" limit="all" filter="featured:true"}}
-    {{#foreach posts}} </br>
-        <span class="author-location fa fa-heart-o" style="color:#F40034;"> Featured: <a href="{{url}}">{{title}}</a></span>
-    {{/foreach}}
-{{/get}}
-                </div>
-    </section>
+<aside class="read-next">
+    {{#next_post}}
+    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="19"}}&hellip;</p>
+        </section>
+    </a>
+    {{/next_post}}
+    {{#prev_post}}
+    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="19"}}&hellip;</p>
+        </section>
+    </a>
+    {{/prev_post}}
+</aside>
                              
                                             
