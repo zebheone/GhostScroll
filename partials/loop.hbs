@@ -33,9 +33,9 @@
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="fa fa-twitter"></i><span class="hidden">Twitter</span>
                 </a>
-                <a class='btn' href="https://plus.google.com/share?url={{@blog.url}}{{url}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <i class="fa fa-google-plus"></i><span class="hidden">Google+</span>
+                <a class="btn" href="http://pinterest.com/pin/create/button/?url={{@blog.url}}{{url}}&media={{@blog.url}}{{image}}&description={{title}}"
+                    onclick="window.open(this.href, 'pinterest-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-pinterest"></i><span class="hidden">Pinterest</span>
                 </a>
                    
                 {{else}}
