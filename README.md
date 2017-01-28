@@ -7,7 +7,7 @@ Please READ "Customization" BEFORE USING! Write me if you like it, problems, fea
 # Purple Slimer
 <img src="http://twelvepurplepills.com/content/images/pill.png" alt="Purple Pill" />Visit My Blog for a DEMO: http://twelvepurplepills.com
 
-* Ready for Ghost 0.9.0
+* Ready for Ghost 0.11.4
 * OnePage/Multiple Pages hybrid based on {{tags}}.
 * Navigation.
 * Pagination.
@@ -24,11 +24,11 @@ Please READ "Customization" BEFORE USING! Write me if you like it, problems, fea
 * Post characters in Index
   
     * file: partials/loop.hbs
-    * line 25: {{content characters="700"}} // if tags found, show only 700 characters, else all characters are shown.
+    * line 25: {{content characters="750"}} // if tags found, show only 700 characters, else all characters are shown.
     
 * Links in left navigation menu
   
-    * file: partials/pagination.hbs
+    * file: partials/menu.hbs
   
 * Disqus Comments
   
