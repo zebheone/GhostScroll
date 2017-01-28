@@ -3,24 +3,32 @@
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
     <header id="site-head" {{#if cover}}style="background-image: url({{cover}})"{{/if}}>
-        <div class="vertical">
-        <div id="site-head-content" class="inner">
-    <a id="blog-logo" href="{{@blog.url}}">
-                 {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
-                    {{@blog.title}}{{/if}}
+         <div class="vertical">
+          <a id="blog-logo" href="{{@blog.url}}">
+                {{#if @blog.logo}}
+                    <img src="{{image}}" alt="Back to home" />
+                {{else}}
+                    {{@blog.title}}
+                {{/if}}
             </a>
-        <h1 class="blog-title"><i class="fa fa-user-secret"></i> {{name}}</h1>
-        <h2 class="blog-description">{{bio}}</h2>
-        <span class="author-stats"><i class="fa fa-archive"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
-            
-         <h4 id="search"></h4>
+ <h1 class="blog-title">{{name}}</h1>
+        {{#if bio}}
+            <h2 class="author-bio">{{bio}}</h2>
+        {{/if}}
+        <div class="author-meta">
+            {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+            {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+            <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+        </div>
+        
+                 <h4 id="search"></h4>
         <i class="fa fa-search"><input class="blog-description" id="search-field" placeholder=" looking for something?"/></i>
         <span class="blog-description" id="results"></span>
         
             </div>
                 </div>
                 <a id=header-arrow class="fa fa-angle-left"><span class="hidden">Scroll Down</span></a>
-</header>
+    </header>
 
 {{/author}}
 

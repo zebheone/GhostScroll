@@ -10,7 +10,7 @@
     <title>{{meta_title}}</title>
     <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}" />
     <meta name="description" content="{{meta_description}}" />
-    <meta name="keywords" content="howto, come fare, web, backup, BitSync, OSMC, KODI, raspberry pi, cryptocurrency, KANO, linux" />
+    <meta name="keywords" content="howto, come fare, web, backup, Resilio Sync, OSMC, KODI, raspberry pi, KANO, linux" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,17 +41,11 @@
 
     {{! Everything else gets inserted here }}
     {{{body}}}
-
-    <footer class="site-footer">
-        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a><br>
-        <div class="inner">
-             <section class="copyright"><a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
-             <section class="poweredby"><a href="https://github.com/zebheone/GhostScroll">Purple Slimer</a> theme by <a href="http://twelvepurplepills.com">Albi</a>. <br>
-             Proudly published with <a class="i-ghost" href="http://ghost.org">Ghost</a><br><span><br>
-
-              </section>
-        </div>
-    </footer>
+    
+     <footer class="site-footer clearfix">
+            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <section class="poweredby"><a href="https://github.com/zebheone/GhostScroll">Purple Slimer</a> theme by <a href="http://twelvepurplepills.com">Albi</a>
+        </footer>
 
     {{! We do need jQuery to be loaded before GhostScroll script }}
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
