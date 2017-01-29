@@ -33,7 +33,7 @@
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="fa fa-twitter"></i><span class="hidden">Twitter</span>
                 </a>
-                <a class="btn" href="http://pinterest.com/pin/create/link/?url={{@blog.url}}{{url}}&media={{image}}&description={{title}}"
+                <a class='btn' href="https://pinterest.com/pin/create/button/?{{url absolute="true"}}{{#if image}}&media={{image absolute="true"}}{{/if}}&description={{excerpt words="20"}}"
                     onclick="window.open(this.href, 'pinterest-share', 'width=550,height=235');return false;">
                     <i class="fa fa-pinterest"></i><span class="hidden">Pinterest</span>
                 </a>
