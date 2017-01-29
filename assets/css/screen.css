@@ -115,7 +115,7 @@ td, th{ padding: 0; }
 }
 
 /* Apply these base styles to all icons */
-.i-ghost, .icon-feed, .icon-twitter, .icon-google-plus, .icon-facebook {
+.i-ghost, .icon-feed, .icon-twitter, .icon-google-plus, .icon-pinterest, .icon-facebook {
     font-family: 'icons';
     speak: none;
     font-style: normal;
@@ -141,6 +141,9 @@ td, th{ padding: 0; }
 }
 .icon-google-plus:before {
     content: "\e003";
+}
+.icon-pinterest:before {
+    content: "\e008";
 }
 .icon-facebook:before {
     content: "\e004";
@@ -966,6 +969,9 @@ a.fn-item.active {
 }
 .post-footer .share .icon-facebook:hover {
     color: #3b5998;
+}
+.post-footer .share .icon-pinterest:hover {
+    color: #dd4b39;
 }
 .post-footer .share .icon-google-plus:hover {
     color: #dd4b39;
