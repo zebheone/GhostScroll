@@ -132,21 +132,25 @@ td, th{ padding: 0; }
 .i-ghost:before {
     content: "\e000";
 }
+.icon-pinterest:before {
+    content: "\f607";
+    font-size: 1.1em;
+}
+.icon-ghost:before {
+    content: "\f600";
+}
 .icon-feed:before {
-    content: "\e001";
+    content: "\f601";
 }
 .icon-twitter:before {
-    content: "\e002";
+    content: "\f602";
     font-size: 1.1em;
 }
 .icon-google-plus:before {
-    content: "\e003";
-}
-.icon-pinterest:before {
-    content: "\e008";
+    content: "\f603";
 }
 .icon-facebook:before {
-    content: "\e004";
+    content: "\f604";
 }
 
 

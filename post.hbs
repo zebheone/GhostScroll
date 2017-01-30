@@ -84,6 +84,11 @@
                     {{#if website}}<span class="author-link fa fa-external-link"><a href="{{website}}" itemprop="url"> {{website}}</a></span>{{/if}}
                     {{/author}}
                     {{#if tags}}<span class="author-location fa fa-tags"> Read more about: {{tags separator=" &bullet; "}}</span>{{/if}}
+                    {{#get "posts" limit="all" filter="featured:true"}}
+                    {{#foreach posts}}
+                    <span class="author-location fa fa-heart-o" style="color:#F40034;"> Featured: <a href="{{url}}">{{title}}</a></span>
+                    {{/foreach}}
+                    {{/get}}
                 </div>
             </section>
             
