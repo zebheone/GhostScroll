@@ -30,8 +30,8 @@
     <link rel="stylesheet" type="text/css" href='{{ asset "css/screen.css" }}' />
 
     {{! Prefetch the hero image}}
-    {{#if @blog.cover}}
-      <link rel="prefetch" href="{{@blog.cover}}" />
+    {{#if @blog.cover_image}}
+      <link rel="prefetch" href="{{@blog.cover_image}}" />
     {{/if}}
 
     {{! Ghost outputs important style and meta data with this tag }}
